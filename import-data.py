@@ -1,5 +1,4 @@
 # A tool to generate import data for NyaaWorks
-# Follow the instructions to create the correct csv
 # Run this script with -i <filename.csv> to import csv file
 
 import csv, sys, getopt, json, os
@@ -45,8 +44,8 @@ propfile.write('data remove storage nw:fur_data_buildin fur\n')
 recipe_list = open(abs_path + '/' + o_path + '/recipe_list.txt', 'w')
 
 #template
-recipe_shaped = {"type": "minecraft:crafting_shaped", "category": "building", "show_notification": True, "key": {}, "pattern": [], "result": {"count": 1, "id": "minecraft:firework_star", "components": {"minecraft:item_name": "Template", "minecraft:custom_model_data": 10000, "minecraft:custom_data": {"nw_fur_id_buildin": 0}}}}
-recipe_shapeless = {"type": "minecraft:crafting_shapeless", "category": "building", "show_notification": True, "ingredients": [], "result": {"count": 1, "id": "minecraft:firework_star", "components": {"minecraft:item_name": "Template", "minecraft:custom_model_data": 10000, "minecraft:custom_data": {"nw_fur_id_buildin": 0}}}}
+recipe_shaped = {"type": "minecraft:crafting_shaped", "category": "building", "show_notification": True, "key": {}, "pattern": [], "result": {"count": 1, "id": "minecraft:firework_star", "components": {"minecraft:item_name": "Template", "minecraft:custom_model_data": 10000, "minecraft:custom_data": ""}}}
+recipe_shapeless = {"type": "minecraft:crafting_shapeless", "category": "building", "show_notification": True, "ingredients": [], "result": {"count": 1, "id": "minecraft:firework_star", "components": {"minecraft:item_name": "Template", "minecraft:custom_model_data": 10000, "minecraft:custom_data": ""}}}
 
 #generate command
 for row in rows:
@@ -249,10 +248,10 @@ for row in rows:
                     jsondata['key']['+'] = {"item": "Template"}
                     jsondata['key']['+']['item'] = row[23]
         jsondata['result']['components']['minecraft:item_name'] = row[1] + '*'
-        jsondata['result']['components']['minecraft:custom_data']['nw_fur_id_buildin'] = int(row[0])
         if row[9] == '1':
-            jsondata['result']['components']['minecraft:custom_data']['nw_fur_orient'] = 1
-        jsondata['result']['components']['minecraft:custom_data']['nw_fur'] = 1
+            jsondata['result']['components']['minecraft:custom_data'] = "{nw_fur: 1, nw_fur_orient: 1, nw_fur_id_buildin: " + row[0] + "}"
+        else:
+            jsondata['result']['components']['minecraft:custom_data'] = "{nw_fur: 1, nw_fur_id_buildin: " + row[0] + "}"
         jsondata['result']['components']['minecraft:custom_model_data'] = int(row[2])
         jsondata['result']['components']['minecraft:firework_explosion'] = {"shape": "small_ball", "colors": [16777215]}
         jsondata['result']['components']['minecraft:hide_additional_tooltip'] = {}

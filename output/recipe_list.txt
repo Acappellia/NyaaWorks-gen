@@ -1,3 +1,4 @@
+"nw:furniture_0",
 "nw:furniture_1",
 "nw:furniture_2",
 "nw:furniture_3",
