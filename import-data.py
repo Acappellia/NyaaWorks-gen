@@ -249,9 +249,9 @@ for row in rows:
                     jsondata['key']['+']['item'] = row[23]
         jsondata['result']['components']['minecraft:item_name'] = row[1] + '*'
         if row[9] == '1':
-            jsondata['result']['components']['minecraft:custom_data'] = "{nw_fur: 1, nw_fur_orient: 1, nw_fur_id_buildin: " + row[0] + "}"
+            jsondata['result']['components']['minecraft:custom_data'] = "{nw_fur: 1b, nw_fur_orient: 1b, nw_fur_id_buildin: " + row[0] + "}"
         else:
-            jsondata['result']['components']['minecraft:custom_data'] = "{nw_fur: 1, nw_fur_id_buildin: " + row[0] + "}"
+            jsondata['result']['components']['minecraft:custom_data'] = "{nw_fur: 1b, nw_fur_id_buildin: " + row[0] + "}"
         jsondata['result']['components']['minecraft:custom_model_data'] = int(row[2])
         jsondata['result']['components']['minecraft:firework_explosion'] = {"shape": "small_ball", "colors": [16777215]}
         jsondata['result']['components']['minecraft:hide_additional_tooltip'] = {}
