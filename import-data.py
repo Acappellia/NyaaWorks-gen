@@ -61,8 +61,8 @@ for row in rows:
     writeline += '}, state_a: {item_id: "minecraft:firework_star", auto_cd: 1, model: '
     writeline += row[2]
     if row[4] == '1':
-        if row[5] == '1':
-            writeline += ', istable: 1'
+#        if row[5] == '1':
+#            writeline += ', istable: 1'
         if row[6] == '1':
             writeline += ', interaction: [{type: 12}]'
         if row[7] == '1':
