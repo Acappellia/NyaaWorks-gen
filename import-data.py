@@ -52,17 +52,23 @@ for row in rows:
     writeline = 'data modify storage nw:fur_data_buildin fur append value {fur_id_buildin: '
     writeline += row[0]
     writeline += ', display_comp: {"minecraft:custom_data": {display_comp: {"minecraft:item_name": \'[{"text":"'
+    if row[24] != '':
+        writeline += '🛠 '
     writeline += row[1]
     writeline += '"}]\''
     writeline += ', "minecraft:custom_model_data": '
     writeline += row[2]
+    writeline += '}'
     if row[9] == '1':
-        writeline += ', "minecraft:custom_data": {nw_fur_orient: 1b}'
-    writeline += '}, state_a: {item_id: "minecraft:firework_star", auto_cd: 1, model: '
+        writeline += ', nw_fur_orient: 1b'
+    if row[24] != '':
+        writeline += ', nw_fur_transfer_target_buildin: '
+        writeline += row[24]
+    writeline += ', state_a: {item_id: "minecraft:firework_star", auto_cd: 1, model: '
     writeline += row[2]
     if row[4] == '1':
-        if row[5] == '1':
-            writeline += ', istable: 1'
+#        if row[5] == '1':
+#            writeline += ', istable: 1'
         if row[6] == '1':
             writeline += ', interaction: [{type: 12}]'
         if row[7] == '1':
@@ -247,11 +253,11 @@ for row in rows:
                 else:
                     jsondata['key']['+'] = {"item": "Template"}
                     jsondata['key']['+']['item'] = row[23]
-        jsondata['result']['components']['minecraft:item_name'] = row[1] + '*'
-        if row[9] == '1':
-            jsondata['result']['components']['minecraft:custom_data'] = "{nw_fur: 1b, nw_fur_orient: 1b, nw_fur_id_buildin: " + row[0] + "}"
-        else:
-            jsondata['result']['components']['minecraft:custom_data'] = "{nw_fur: 1b, nw_fur_id_buildin: " + row[0] + "}"
+        jsondata['result']['components']['minecraft:item_name'] = '"'
+        if row[24] != '':
+            jsondata['result']['components']['minecraft:item_name'] = '"🛠 '
+        jsondata['result']['components']['minecraft:item_name'] += row[1] + '"'
+        jsondata['result']['components']['minecraft:custom_data'] = "{nw_fur: 1b, nw_fur_id_buildin: " + row[0] + "}"
         jsondata['result']['components']['minecraft:custom_model_data'] = int(row[2])
         jsondata['result']['components']['minecraft:firework_explosion'] = {"shape": "small_ball", "colors": [16777215]}
         jsondata['result']['components']['minecraft:hide_additional_tooltip'] = {}
