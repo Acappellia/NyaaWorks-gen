@@ -963,4 +963,4 @@
 961,签字台,5003,nw:sign_table,,,,1,,,1,,,$%&,###,#wooden_slabs,feather,paper,ink_sac,,,,,,
 962,祝福圣台,6001,ng:blessing_table,,,,1,,,1,,%,#$#,###,#wooden_slabs,amethyst_block,amethyst_shard,,,,,,,
 963,液压机,6003,ng:hydraulic_press,,,,1,,,1,,#,%$%,%%%,piston,iron_block,#planks,,,,,,,
-964,好朋友纪念碑,7001,ng:friend_slate,,,,1,,,1,,$$,##,##,stone_bricks,stone_brick_slab,,,,,,,,
+964,友谊的新枝,7001,ng:friend_slate,,,,1,,,1,,#$#, # ,,brick,amethyst_shard,,,,,,,,
