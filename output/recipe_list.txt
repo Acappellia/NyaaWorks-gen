@@ -631,3 +631,4 @@
 "nw:furniture_961",
 "nw:furniture_962",
 "nw:furniture_963",
+"nw:furniture_964",
