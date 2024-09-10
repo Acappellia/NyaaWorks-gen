@@ -379,6 +379,8 @@ for row in rows:
         jsondata['result']['components']['minecraft:firework_explosion'] = {"shape": "small_ball", "colors": [16777215]}
         jsondata['result']['components']['minecraft:hide_additional_tooltip'] = {}
         jsondata['result']['components']['minecraft:food'] = {"saturation": 0.0, "nutrition": 0, "can_always_eat": True, "eat_seconds": 1000000.0}
+        if 'group' in jsondata.keys():
+            del jsondata['group']
         if row[3] != '':
             jsondata['group'] = row[3]
         recipefile.write(json.dumps(jsondata))
