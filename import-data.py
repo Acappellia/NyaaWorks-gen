@@ -26,7 +26,11 @@ if f_path == '':
 if o_path == '':
     o_path = 'output'
 
-os.mkdir(abs_path + '/' + o_path + '/')
+try:
+    os.mkdir(abs_path + '/' + o_path + '/')
+except FileExistsError: 
+    print('directory alreay exists')
+
 print('Reading from ', f_path)
 
 #read file
@@ -42,6 +46,107 @@ propfile = open(abs_path + '/' + o_path + '/init_buildin_data.mcfunction', 'w')
 propfile.write('data remove storage nw:fur_data_buildin fur\n')
 
 recipe_list = open(abs_path + '/' + o_path + '/recipe_list.txt', 'w')
+rei_file = open(abs_path + '/' + o_path + '/favorites.json5', 'w', encoding="utf8")
+emi_file = open(abs_path + '/' + o_path + '/emi.json', 'w', encoding="utf8")
+
+rei_json = {
+    "favorites": [
+		"{data:{components:{\"minecraft:custom_data\":{nw_dye:1b},\"minecraft:custom_model_data\":5001,\"minecraft:damage\":0,\"minecraft:firework_explosion\":{colors:[I;16383998],shape:\"small_ball\"},\"minecraft:hide_additional_tooltip\":{},\"minecraft:item_name\":'\"白色颜料刷\"',\"minecraft:lore\":['{\"color\":\"gray\",\"italic\":false,\"text\":\"能够自由的为所有家具染色！\"}','{\"color\":\"gray\",\"extra\":[{\"color\":\"white\",\"italic\":false,\"text\":\" 家具染色台 \"},{\"color\":\"gray\",\"italic\":false,\"text\":\"上使用\"}],\"italic\":false,\"text\":\"右键已放置的家具或在\"}'],\"minecraft:max_damage\":125,\"minecraft:max_stack_size\":1},count:1,id:\"minecraft:firework_star\",type:\"minecraft:item\"},type:\"roughlyenoughitems:entry_stack\"}",
+		"{data:{components:{\"minecraft:custom_data\":{nw_dye:1b},\"minecraft:custom_model_data\":5001,\"minecraft:damage\":0,\"minecraft:firework_explosion\":{colors:[I;6192150],shape:\"small_ball\"},\"minecraft:hide_additional_tooltip\":{},\"minecraft:item_name\":'\"绿色颜料刷\"',\"minecraft:lore\":['{\"color\":\"gray\",\"italic\":false,\"text\":\"能够自由的为所有家具染色！\"}','{\"color\":\"gray\",\"extra\":[{\"color\":\"white\",\"italic\":false,\"text\":\" 家具染色台 \"},{\"color\":\"gray\",\"italic\":false,\"text\":\"上使用\"}],\"italic\":false,\"text\":\"右键已放置的家具或在\"}'],\"minecraft:max_damage\":125,\"minecraft:max_stack_size\":1},count:1,id:\"minecraft:firework_star\",type:\"minecraft:item\"},type:\"roughlyenoughitems:entry_stack\"}",
+		"{data:{components:{\"minecraft:custom_data\":{nw_dye:1b},\"minecraft:custom_model_data\":5001,\"minecraft:damage\":0,\"minecraft:firework_explosion\":{colors:[I;1481884],shape:\"small_ball\"},\"minecraft:hide_additional_tooltip\":{},\"minecraft:item_name\":'\"青色颜料刷\"',\"minecraft:lore\":['{\"color\":\"gray\",\"italic\":false,\"text\":\"能够自由的为所有家具染色！\"}','{\"color\":\"gray\",\"extra\":[{\"color\":\"white\",\"italic\":false,\"text\":\" 家具染色台 \"},{\"color\":\"gray\",\"italic\":false,\"text\":\"上使用\"}],\"italic\":false,\"text\":\"右键已放置的家具或在\"}'],\"minecraft:max_damage\":125,\"minecraft:max_stack_size\":1},count:1,id:\"minecraft:firework_star\",type:\"minecraft:item\"},type:\"roughlyenoughitems:entry_stack\"}",
+		"{data:{components:{\"minecraft:custom_data\":{nw_dye:1b},\"minecraft:custom_model_data\":5001,\"minecraft:damage\":0,\"minecraft:firework_explosion\":{colors:[I;3847130],shape:\"small_ball\"},\"minecraft:hide_additional_tooltip\":{},\"minecraft:item_name\":'\"淡蓝色颜料刷\"',\"minecraft:lore\":['{\"color\":\"gray\",\"italic\":false,\"text\":\"能够自由的为所有家具染色！\"}','{\"color\":\"gray\",\"extra\":[{\"color\":\"white\",\"italic\":false,\"text\":\" 家具染色台 \"},{\"color\":\"gray\",\"italic\":false,\"text\":\"上使用\"}],\"italic\":false,\"text\":\"右键已放置的家具或在\"}'],\"minecraft:max_damage\":125,\"minecraft:max_stack_size\":1},count:1,id:\"minecraft:firework_star\",type:\"minecraft:item\"},type:\"roughlyenoughitems:entry_stack\"}",
+		"{data:{components:{\"minecraft:custom_data\":{nw_dye:1b},\"minecraft:custom_model_data\":5001,\"minecraft:damage\":0,\"minecraft:firework_explosion\":{colors:[I;3949738],shape:\"small_ball\"},\"minecraft:hide_additional_tooltip\":{},\"minecraft:item_name\":'\"蓝色颜料刷\"',\"minecraft:lore\":['{\"color\":\"gray\",\"italic\":false,\"text\":\"能够自由的为所有家具染色！\"}','{\"color\":\"gray\",\"extra\":[{\"color\":\"white\",\"italic\":false,\"text\":\" 家具染色台 \"},{\"color\":\"gray\",\"italic\":false,\"text\":\"上使用\"}],\"italic\":false,\"text\":\"右键已放置的家具或在\"}'],\"minecraft:max_damage\":125,\"minecraft:max_stack_size\":1},count:1,id:\"minecraft:firework_star\",type:\"minecraft:item\"},type:\"roughlyenoughitems:entry_stack\"}",
+		"{data:{components:{\"minecraft:custom_data\":{nw_dye:1b},\"minecraft:custom_model_data\":5001,\"minecraft:damage\":0,\"minecraft:firework_explosion\":{colors:[I;8991416],shape:\"small_ball\"},\"minecraft:hide_additional_tooltip\":{},\"minecraft:item_name\":'\"紫色颜料刷\"',\"minecraft:lore\":['{\"color\":\"gray\",\"italic\":false,\"text\":\"能够自由的为所有家具染色！\"}','{\"color\":\"gray\",\"extra\":[{\"color\":\"white\",\"italic\":false,\"text\":\" 家具染色台 \"},{\"color\":\"gray\",\"italic\":false,\"text\":\"上使用\"}],\"italic\":false,\"text\":\"右键已放置的家具或在\"}'],\"minecraft:max_damage\":125,\"minecraft:max_stack_size\":1},count:1,id:\"minecraft:firework_star\",type:\"minecraft:item\"},type:\"roughlyenoughitems:entry_stack\"}",
+		"{data:{components:{\"minecraft:custom_data\":{nw_dye:1b},\"minecraft:custom_model_data\":5001,\"minecraft:damage\":0,\"minecraft:firework_explosion\":{colors:[I;13061821],shape:\"small_ball\"},\"minecraft:hide_additional_tooltip\":{},\"minecraft:item_name\":'\"品红色颜料刷\"',\"minecraft:lore\":['{\"color\":\"gray\",\"italic\":false,\"text\":\"能够自由的为所有家具染色！\"}','{\"color\":\"gray\",\"extra\":[{\"color\":\"white\",\"italic\":false,\"text\":\" 家具染色台 \"},{\"color\":\"gray\",\"italic\":false,\"text\":\"上使用\"}],\"italic\":false,\"text\":\"右键已放置的家具或在\"}'],\"minecraft:max_damage\":125,\"minecraft:max_stack_size\":1},count:1,id:\"minecraft:firework_star\",type:\"minecraft:item\"},type:\"roughlyenoughitems:entry_stack\"}",
+		"{data:{components:{\"minecraft:custom_data\":{nw_dye:1b},\"minecraft:custom_model_data\":5001,\"minecraft:damage\":0,\"minecraft:firework_explosion\":{colors:[I;15961002],shape:\"small_ball\"},\"minecraft:hide_additional_tooltip\":{},\"minecraft:item_name\":'\"粉红色颜料刷\"',\"minecraft:lore\":['{\"color\":\"gray\",\"italic\":false,\"text\":\"能够自由的为所有家具染色！\"}','{\"color\":\"gray\",\"extra\":[{\"color\":\"white\",\"italic\":false,\"text\":\" 家具染色台 \"},{\"color\":\"gray\",\"italic\":false,\"text\":\"上使用\"}],\"italic\":false,\"text\":\"右键已放置的家具或在\"}'],\"minecraft:max_damage\":125,\"minecraft:max_stack_size\":1},count:1,id:\"minecraft:firework_star\",type:\"minecraft:item\"},type:\"roughlyenoughitems:entry_stack\"}",
+		"{data:{components:{\"minecraft:custom_data\":{nw_dye:1b},\"minecraft:custom_model_data\":5001,\"minecraft:damage\":0,\"minecraft:firework_explosion\":{colors:[I;10329495],shape:\"small_ball\"},\"minecraft:hide_additional_tooltip\":{},\"minecraft:item_name\":'\"淡灰色颜料刷\"',\"minecraft:lore\":['{\"color\":\"gray\",\"italic\":false,\"text\":\"能够自由的为所有家具染色！\"}','{\"color\":\"gray\",\"extra\":[{\"color\":\"white\",\"italic\":false,\"text\":\" 家具染色台 \"},{\"color\":\"gray\",\"italic\":false,\"text\":\"上使用\"}],\"italic\":false,\"text\":\"右键已放置的家具或在\"}'],\"minecraft:max_damage\":125,\"minecraft:max_stack_size\":1},count:1,id:\"minecraft:firework_star\",type:\"minecraft:item\"},type:\"roughlyenoughitems:entry_stack\"}",
+		"{data:{components:{\"minecraft:custom_data\":{nw_dye:1b},\"minecraft:custom_model_data\":5001,\"minecraft:damage\":0,\"minecraft:firework_explosion\":{colors:[I;4673362],shape:\"small_ball\"},\"minecraft:hide_additional_tooltip\":{},\"minecraft:item_name\":'\"灰色颜料刷\"',\"minecraft:lore\":['{\"color\":\"gray\",\"italic\":false,\"text\":\"能够自由的为所有家具染色！\"}','{\"color\":\"gray\",\"extra\":[{\"color\":\"white\",\"italic\":false,\"text\":\" 家具染色台 \"},{\"color\":\"gray\",\"italic\":false,\"text\":\"上使用\"}],\"italic\":false,\"text\":\"右键已放置的家具或在\"}'],\"minecraft:max_damage\":125,\"minecraft:max_stack_size\":1},count:1,id:\"minecraft:firework_star\",type:\"minecraft:item\"},type:\"roughlyenoughitems:entry_stack\"}",
+		"{data:{components:{\"minecraft:custom_data\":{nw_dye:1b},\"minecraft:custom_model_data\":5001,\"minecraft:damage\":0,\"minecraft:firework_explosion\":{colors:[I;1908001],shape:\"small_ball\"},\"minecraft:hide_additional_tooltip\":{},\"minecraft:item_name\":'\"黑色颜料刷\"',\"minecraft:lore\":['{\"color\":\"gray\",\"italic\":false,\"text\":\"能够自由的为所有家具染色！\"}','{\"color\":\"gray\",\"extra\":[{\"color\":\"white\",\"italic\":false,\"text\":\" 家具染色台 \"},{\"color\":\"gray\",\"italic\":false,\"text\":\"上使用\"}],\"italic\":false,\"text\":\"右键已放置的家具或在\"}'],\"minecraft:max_damage\":125,\"minecraft:max_stack_size\":1},count:1,id:\"minecraft:firework_star\",type:\"minecraft:item\"},type:\"roughlyenoughitems:entry_stack\"}",
+		"{data:{components:{\"minecraft:custom_data\":{nw_dye:1b},\"minecraft:custom_model_data\":5001,\"minecraft:damage\":0,\"minecraft:firework_explosion\":{colors:[I;8606770],shape:\"small_ball\"},\"minecraft:hide_additional_tooltip\":{},\"minecraft:item_name\":'\"棕色颜料刷\"',\"minecraft:lore\":['{\"color\":\"gray\",\"italic\":false,\"text\":\"能够自由的为所有家具染色！\"}','{\"color\":\"gray\",\"extra\":[{\"color\":\"white\",\"italic\":false,\"text\":\" 家具染色台 \"},{\"color\":\"gray\",\"italic\":false,\"text\":\"上使用\"}],\"italic\":false,\"text\":\"右键已放置的家具或在\"}'],\"minecraft:max_damage\":125,\"minecraft:max_stack_size\":1},count:1,id:\"minecraft:firework_star\",type:\"minecraft:item\"},type:\"roughlyenoughitems:entry_stack\"}",
+		"{data:{components:{\"minecraft:custom_data\":{nw_dye:1b},\"minecraft:custom_model_data\":5001,\"minecraft:damage\":0,\"minecraft:firework_explosion\":{colors:[I;11546150],shape:\"small_ball\"},\"minecraft:hide_additional_tooltip\":{},\"minecraft:item_name\":'\"红色颜料刷\"',\"minecraft:lore\":['{\"color\":\"gray\",\"italic\":false,\"text\":\"能够自由的为所有家具染色！\"}','{\"color\":\"gray\",\"extra\":[{\"color\":\"white\",\"italic\":false,\"text\":\" 家具染色台 \"},{\"color\":\"gray\",\"italic\":false,\"text\":\"上使用\"}],\"italic\":false,\"text\":\"右键已放置的家具或在\"}'],\"minecraft:max_damage\":125,\"minecraft:max_stack_size\":1},count:1,id:\"minecraft:firework_star\",type:\"minecraft:item\"},type:\"roughlyenoughitems:entry_stack\"}",
+		"{data:{components:{\"minecraft:custom_data\":{nw_dye:1b},\"minecraft:custom_model_data\":5001,\"minecraft:damage\":0,\"minecraft:firework_explosion\":{colors:[I;16351261],shape:\"small_ball\"},\"minecraft:hide_additional_tooltip\":{},\"minecraft:item_name\":'\"橙色颜料刷\"',\"minecraft:lore\":['{\"color\":\"gray\",\"italic\":false,\"text\":\"能够自由的为所有家具染色！\"}','{\"color\":\"gray\",\"extra\":[{\"color\":\"white\",\"italic\":false,\"text\":\" 家具染色台 \"},{\"color\":\"gray\",\"italic\":false,\"text\":\"上使用\"}],\"italic\":false,\"text\":\"右键已放置的家具或在\"}'],\"minecraft:max_damage\":125,\"minecraft:max_stack_size\":1},count:1,id:\"minecraft:firework_star\",type:\"minecraft:item\"},type:\"roughlyenoughitems:entry_stack\"}",
+		"{data:{components:{\"minecraft:custom_data\":{nw_dye:1b},\"minecraft:custom_model_data\":5001,\"minecraft:damage\":0,\"minecraft:firework_explosion\":{colors:[I;16701501],shape:\"small_ball\"},\"minecraft:hide_additional_tooltip\":{},\"minecraft:item_name\":'\"黄色颜料刷\"',\"minecraft:lore\":['{\"color\":\"gray\",\"italic\":false,\"text\":\"能够自由的为所有家具染色！\"}','{\"color\":\"gray\",\"extra\":[{\"color\":\"white\",\"italic\":false,\"text\":\" 家具染色台 \"},{\"color\":\"gray\",\"italic\":false,\"text\":\"上使用\"}],\"italic\":false,\"text\":\"右键已放置的家具或在\"}'],\"minecraft:max_damage\":125,\"minecraft:max_stack_size\":1},count:1,id:\"minecraft:firework_star\",type:\"minecraft:item\"},type:\"roughlyenoughitems:entry_stack\"}",
+		"{data:{components:{\"minecraft:custom_data\":{nw_dye:1b},\"minecraft:custom_model_data\":5001,\"minecraft:damage\":0,\"minecraft:firework_explosion\":{colors:[I;8439583],shape:\"small_ball\"},\"minecraft:hide_additional_tooltip\":{},\"minecraft:item_name\":'\"黄绿色颜料刷\"',\"minecraft:lore\":['{\"color\":\"gray\",\"italic\":false,\"text\":\"能够自由的为所有家具染色！\"}','{\"color\":\"gray\",\"extra\":[{\"color\":\"white\",\"italic\":false,\"text\":\" 家具染色台 \"},{\"color\":\"gray\",\"italic\":false,\"text\":\"上使用\"}],\"italic\":false,\"text\":\"右键已放置的家具或在\"}'],\"minecraft:max_damage\":125,\"minecraft:max_stack_size\":1},count:1,id:\"minecraft:firework_star\",type:\"minecraft:item\"},type:\"roughlyenoughitems:entry_stack\"}"
+	],
+    "hiddenFavorites": [],
+    "displays": []
+}
+
+emi_json = {
+  "favorites": [
+    {
+      "stack": "item:minecraft:firework_star{\"minecraft:custom_data\":{nw_dye:1b},\"minecraft:custom_model_data\":5001,\"minecraft:damage\":0,\"minecraft:firework_explosion\":{colors:[I;16383998],shape:\"small_ball\"},\"minecraft:hide_additional_tooltip\":{},\"minecraft:item_name\":\u0027\"白色颜料刷\"\u0027,\"minecraft:lore\":[\u0027{\"color\":\"gray\",\"italic\":false,\"text\":\"能够自由的为所有家具染色！\"}\u0027,\u0027{\"color\":\"gray\",\"extra\":[{\"color\":\"white\",\"italic\":false,\"text\":\" 家具染色台 \"},{\"color\":\"gray\",\"italic\":false,\"text\":\"上使用\"}],\"italic\":false,\"text\":\"右键已放置的家具或在\"}\u0027],\"minecraft:max_damage\":125,\"minecraft:max_stack_size\":1}",
+      "recipe": "nw:brush_1"
+    },
+    {
+      "stack": "item:minecraft:firework_star{\"minecraft:custom_data\":{nw_dye:1b},\"minecraft:custom_model_data\":5001,\"minecraft:damage\":0,\"minecraft:firework_explosion\":{colors:[I;10329495],shape:\"small_ball\"},\"minecraft:hide_additional_tooltip\":{},\"minecraft:item_name\":\u0027\"淡灰色颜料刷\"\u0027,\"minecraft:lore\":[\u0027{\"color\":\"gray\",\"italic\":false,\"text\":\"能够自由的为所有家具染色！\"}\u0027,\u0027{\"color\":\"gray\",\"extra\":[{\"color\":\"white\",\"italic\":false,\"text\":\" 家具染色台 \"},{\"color\":\"gray\",\"italic\":false,\"text\":\"上使用\"}],\"italic\":false,\"text\":\"右键已放置的家具或在\"}\u0027],\"minecraft:max_damage\":125,\"minecraft:max_stack_size\":1}",
+      "recipe": "nw:brush_2"
+    },
+    {
+      "stack": "item:minecraft:firework_star{\"minecraft:custom_data\":{nw_dye:1b},\"minecraft:custom_model_data\":5001,\"minecraft:damage\":0,\"minecraft:firework_explosion\":{colors:[I;4673362],shape:\"small_ball\"},\"minecraft:hide_additional_tooltip\":{},\"minecraft:item_name\":\u0027\"灰色颜料刷\"\u0027,\"minecraft:lore\":[\u0027{\"color\":\"gray\",\"italic\":false,\"text\":\"能够自由的为所有家具染色！\"}\u0027,\u0027{\"color\":\"gray\",\"extra\":[{\"color\":\"white\",\"italic\":false,\"text\":\" 家具染色台 \"},{\"color\":\"gray\",\"italic\":false,\"text\":\"上使用\"}],\"italic\":false,\"text\":\"右键已放置的家具或在\"}\u0027],\"minecraft:max_damage\":125,\"minecraft:max_stack_size\":1}",
+      "recipe": "nw:brush_3"
+    },
+    {
+      "stack": "item:minecraft:firework_star{\"minecraft:custom_data\":{nw_dye:1b},\"minecraft:custom_model_data\":5001,\"minecraft:damage\":0,\"minecraft:firework_explosion\":{colors:[I;1908001],shape:\"small_ball\"},\"minecraft:hide_additional_tooltip\":{},\"minecraft:item_name\":\u0027\"黑色颜料刷\"\u0027,\"minecraft:lore\":[\u0027{\"color\":\"gray\",\"italic\":false,\"text\":\"能够自由的为所有家具染色！\"}\u0027,\u0027{\"color\":\"gray\",\"extra\":[{\"color\":\"white\",\"italic\":false,\"text\":\" 家具染色台 \"},{\"color\":\"gray\",\"italic\":false,\"text\":\"上使用\"}],\"italic\":false,\"text\":\"右键已放置的家具或在\"}\u0027],\"minecraft:max_damage\":125,\"minecraft:max_stack_size\":1}",
+      "recipe": "nw:brush_4"
+    },
+    {
+      "stack": "item:minecraft:firework_star{\"minecraft:custom_data\":{nw_dye:1b},\"minecraft:custom_model_data\":5001,\"minecraft:damage\":0,\"minecraft:firework_explosion\":{colors:[I;8606770],shape:\"small_ball\"},\"minecraft:hide_additional_tooltip\":{},\"minecraft:item_name\":\u0027\"棕色颜料刷\"\u0027,\"minecraft:lore\":[\u0027{\"color\":\"gray\",\"italic\":false,\"text\":\"能够自由的为所有家具染色！\"}\u0027,\u0027{\"color\":\"gray\",\"extra\":[{\"color\":\"white\",\"italic\":false,\"text\":\" 家具染色台 \"},{\"color\":\"gray\",\"italic\":false,\"text\":\"上使用\"}],\"italic\":false,\"text\":\"右键已放置的家具或在\"}\u0027],\"minecraft:max_damage\":125,\"minecraft:max_stack_size\":1}",
+      "recipe": "nw:brush_5"
+    },
+    {
+      "stack": "item:minecraft:firework_star{\"minecraft:custom_data\":{nw_dye:1b},\"minecraft:custom_model_data\":5001,\"minecraft:damage\":0,\"minecraft:firework_explosion\":{colors:[I;11546150],shape:\"small_ball\"},\"minecraft:hide_additional_tooltip\":{},\"minecraft:item_name\":\u0027\"红色颜料刷\"\u0027,\"minecraft:lore\":[\u0027{\"color\":\"gray\",\"italic\":false,\"text\":\"能够自由的为所有家具染色！\"}\u0027,\u0027{\"color\":\"gray\",\"extra\":[{\"color\":\"white\",\"italic\":false,\"text\":\" 家具染色台 \"},{\"color\":\"gray\",\"italic\":false,\"text\":\"上使用\"}],\"italic\":false,\"text\":\"右键已放置的家具或在\"}\u0027],\"minecraft:max_damage\":125,\"minecraft:max_stack_size\":1}",
+      "recipe": "nw:brush_6"
+    },
+    {
+      "stack": "item:minecraft:firework_star{\"minecraft:custom_data\":{nw_dye:1b},\"minecraft:custom_model_data\":5001,\"minecraft:damage\":0,\"minecraft:firework_explosion\":{colors:[I;16351261],shape:\"small_ball\"},\"minecraft:hide_additional_tooltip\":{},\"minecraft:item_name\":\u0027\"橙色颜料刷\"\u0027,\"minecraft:lore\":[\u0027{\"color\":\"gray\",\"italic\":false,\"text\":\"能够自由的为所有家具染色！\"}\u0027,\u0027{\"color\":\"gray\",\"extra\":[{\"color\":\"white\",\"italic\":false,\"text\":\" 家具染色台 \"},{\"color\":\"gray\",\"italic\":false,\"text\":\"上使用\"}],\"italic\":false,\"text\":\"右键已放置的家具或在\"}\u0027],\"minecraft:max_damage\":125,\"minecraft:max_stack_size\":1}",
+      "recipe": "nw:brush_7"
+    },
+    {
+      "stack": "item:minecraft:firework_star{\"minecraft:custom_data\":{nw_dye:1b},\"minecraft:custom_model_data\":5001,\"minecraft:damage\":0,\"minecraft:firework_explosion\":{colors:[I;16701501],shape:\"small_ball\"},\"minecraft:hide_additional_tooltip\":{},\"minecraft:item_name\":\u0027\"黄色颜料刷\"\u0027,\"minecraft:lore\":[\u0027{\"color\":\"gray\",\"italic\":false,\"text\":\"能够自由的为所有家具染色！\"}\u0027,\u0027{\"color\":\"gray\",\"extra\":[{\"color\":\"white\",\"italic\":false,\"text\":\" 家具染色台 \"},{\"color\":\"gray\",\"italic\":false,\"text\":\"上使用\"}],\"italic\":false,\"text\":\"右键已放置的家具或在\"}\u0027],\"minecraft:max_damage\":125,\"minecraft:max_stack_size\":1}",
+      "recipe": "nw:brush_8"
+    },
+    {
+      "stack": "item:minecraft:firework_star{\"minecraft:custom_data\":{nw_dye:1b},\"minecraft:custom_model_data\":5001,\"minecraft:damage\":0,\"minecraft:firework_explosion\":{colors:[I;8439583],shape:\"small_ball\"},\"minecraft:hide_additional_tooltip\":{},\"minecraft:item_name\":\u0027\"黄绿色颜料刷\"\u0027,\"minecraft:lore\":[\u0027{\"color\":\"gray\",\"italic\":false,\"text\":\"能够自由的为所有家具染色！\"}\u0027,\u0027{\"color\":\"gray\",\"extra\":[{\"color\":\"white\",\"italic\":false,\"text\":\" 家具染色台 \"},{\"color\":\"gray\",\"italic\":false,\"text\":\"上使用\"}],\"italic\":false,\"text\":\"右键已放置的家具或在\"}\u0027],\"minecraft:max_damage\":125,\"minecraft:max_stack_size\":1}",
+      "recipe": "nw:brush_9"
+    },
+    {
+      "stack": "item:minecraft:firework_star{\"minecraft:custom_data\":{nw_dye:1b},\"minecraft:custom_model_data\":5001,\"minecraft:damage\":0,\"minecraft:firework_explosion\":{colors:[I;6192150],shape:\"small_ball\"},\"minecraft:hide_additional_tooltip\":{},\"minecraft:item_name\":\u0027\"绿色颜料刷\"\u0027,\"minecraft:lore\":[\u0027{\"color\":\"gray\",\"italic\":false,\"text\":\"能够自由的为所有家具染色！\"}\u0027,\u0027{\"color\":\"gray\",\"extra\":[{\"color\":\"white\",\"italic\":false,\"text\":\" 家具染色台 \"},{\"color\":\"gray\",\"italic\":false,\"text\":\"上使用\"}],\"italic\":false,\"text\":\"右键已放置的家具或在\"}\u0027],\"minecraft:max_damage\":125,\"minecraft:max_stack_size\":1}",
+      "recipe": "nw:brush_10"
+    },
+    {
+      "stack": "item:minecraft:firework_star{\"minecraft:custom_data\":{nw_dye:1b},\"minecraft:custom_model_data\":5001,\"minecraft:damage\":0,\"minecraft:firework_explosion\":{colors:[I;1481884],shape:\"small_ball\"},\"minecraft:hide_additional_tooltip\":{},\"minecraft:item_name\":\u0027\"青色颜料刷\"\u0027,\"minecraft:lore\":[\u0027{\"color\":\"gray\",\"italic\":false,\"text\":\"能够自由的为所有家具染色！\"}\u0027,\u0027{\"color\":\"gray\",\"extra\":[{\"color\":\"white\",\"italic\":false,\"text\":\" 家具染色台 \"},{\"color\":\"gray\",\"italic\":false,\"text\":\"上使用\"}],\"italic\":false,\"text\":\"右键已放置的家具或在\"}\u0027],\"minecraft:max_damage\":125,\"minecraft:max_stack_size\":1}",
+      "recipe": "nw:brush_11"
+    },
+    {
+      "stack": "item:minecraft:firework_star{\"minecraft:custom_data\":{nw_dye:1b},\"minecraft:custom_model_data\":5001,\"minecraft:damage\":0,\"minecraft:firework_explosion\":{colors:[I;3847130],shape:\"small_ball\"},\"minecraft:hide_additional_tooltip\":{},\"minecraft:item_name\":\u0027\"淡蓝色颜料刷\"\u0027,\"minecraft:lore\":[\u0027{\"color\":\"gray\",\"italic\":false,\"text\":\"能够自由的为所有家具染色！\"}\u0027,\u0027{\"color\":\"gray\",\"extra\":[{\"color\":\"white\",\"italic\":false,\"text\":\" 家具染色台 \"},{\"color\":\"gray\",\"italic\":false,\"text\":\"上使用\"}],\"italic\":false,\"text\":\"右键已放置的家具或在\"}\u0027],\"minecraft:max_damage\":125,\"minecraft:max_stack_size\":1}",
+      "recipe": "nw:brush_12"
+    },
+    {
+      "stack": "item:minecraft:firework_star{\"minecraft:custom_data\":{nw_dye:1b},\"minecraft:custom_model_data\":5001,\"minecraft:damage\":0,\"minecraft:firework_explosion\":{colors:[I;3949738],shape:\"small_ball\"},\"minecraft:hide_additional_tooltip\":{},\"minecraft:item_name\":\u0027\"蓝色颜料刷\"\u0027,\"minecraft:lore\":[\u0027{\"color\":\"gray\",\"italic\":false,\"text\":\"能够自由的为所有家具染色！\"}\u0027,\u0027{\"color\":\"gray\",\"extra\":[{\"color\":\"white\",\"italic\":false,\"text\":\" 家具染色台 \"},{\"color\":\"gray\",\"italic\":false,\"text\":\"上使用\"}],\"italic\":false,\"text\":\"右键已放置的家具或在\"}\u0027],\"minecraft:max_damage\":125,\"minecraft:max_stack_size\":1}",
+      "recipe": "nw:brush_13"
+    },
+    {
+      "stack": "item:minecraft:firework_star{\"minecraft:custom_data\":{nw_dye:1b},\"minecraft:custom_model_data\":5001,\"minecraft:damage\":0,\"minecraft:firework_explosion\":{colors:[I;8991416],shape:\"small_ball\"},\"minecraft:hide_additional_tooltip\":{},\"minecraft:item_name\":\u0027\"紫色颜料刷\"\u0027,\"minecraft:lore\":[\u0027{\"color\":\"gray\",\"italic\":false,\"text\":\"能够自由的为所有家具染色！\"}\u0027,\u0027{\"color\":\"gray\",\"extra\":[{\"color\":\"white\",\"italic\":false,\"text\":\" 家具染色台 \"},{\"color\":\"gray\",\"italic\":false,\"text\":\"上使用\"}],\"italic\":false,\"text\":\"右键已放置的家具或在\"}\u0027],\"minecraft:max_damage\":125,\"minecraft:max_stack_size\":1}",
+      "recipe": "nw:brush_14"
+    },
+    {
+      "stack": "item:minecraft:firework_star{\"minecraft:custom_data\":{nw_dye:1b},\"minecraft:custom_model_data\":5001,\"minecraft:damage\":0,\"minecraft:firework_explosion\":{colors:[I;13061821],shape:\"small_ball\"},\"minecraft:hide_additional_tooltip\":{},\"minecraft:item_name\":\u0027\"品红色颜料刷\"\u0027,\"minecraft:lore\":[\u0027{\"color\":\"gray\",\"italic\":false,\"text\":\"能够自由的为所有家具染色！\"}\u0027,\u0027{\"color\":\"gray\",\"extra\":[{\"color\":\"white\",\"italic\":false,\"text\":\" 家具染色台 \"},{\"color\":\"gray\",\"italic\":false,\"text\":\"上使用\"}],\"italic\":false,\"text\":\"右键已放置的家具或在\"}\u0027],\"minecraft:max_damage\":125,\"minecraft:max_stack_size\":1}",
+      "recipe": "nw:brush_15"
+    },
+    {
+      "stack": "item:minecraft:firework_star{\"minecraft:custom_data\":{nw_dye:1b},\"minecraft:custom_model_data\":5001,\"minecraft:damage\":0,\"minecraft:firework_explosion\":{colors:[I;15961002],shape:\"small_ball\"},\"minecraft:hide_additional_tooltip\":{},\"minecraft:item_name\":\u0027\"粉红色颜料刷\"\u0027,\"minecraft:lore\":[\u0027{\"color\":\"gray\",\"italic\":false,\"text\":\"能够自由的为所有家具染色！\"}\u0027,\u0027{\"color\":\"gray\",\"extra\":[{\"color\":\"white\",\"italic\":false,\"text\":\" 家具染色台 \"},{\"color\":\"gray\",\"italic\":false,\"text\":\"上使用\"}],\"italic\":false,\"text\":\"右键已放置的家具或在\"}\u0027],\"minecraft:max_damage\":125,\"minecraft:max_stack_size\":1}",
+      "recipe": "nw:brush_16"
+    }
+  ],
+  "recipe_defaults": {
+    "added": [],
+    "tags": {},
+    "resolutions": {},
+    "disabled": []
+  },
+  "hidden_stacks": []
+}
 
 #template
 recipe_shaped = {"type": "minecraft:crafting_shaped", "category": "building", "show_notification": True, "key": {}, "pattern": [], "result": {"count": 1, "id": "minecraft:firework_star", "components": {"minecraft:item_name": "Template", "minecraft:custom_model_data": 10000, "minecraft:custom_data": ""}}}
@@ -52,9 +157,11 @@ for row in rows:
     writeline = 'data modify storage nw:fur_data_buildin fur append value {fur_id_buildin: '
     writeline += row[0]
     writeline += ', display_comp: {"minecraft:custom_data": {display_comp: {"minecraft:item_name": \'[{"text":"'
+    item_name = ""
     if row[24] != '':
-        writeline += '🛠 '
-    writeline += row[1]
+        item_name += '🛠 '
+    item_name += row[1]
+    writeline += item_name
     writeline += '"}]\''
     writeline += ', "minecraft:custom_model_data": '
     writeline += row[2]
@@ -80,6 +187,16 @@ for row in rows:
     writeline += row[0]
     writeline += '}}}\n'
     propfile.write(writeline)
+
+    rei_append = "{data:{components:{\"minecraft:custom_data\":{nw_fur:1b,nw_fur_id_buildin:" + row[0] + "},\"minecraft:custom_model_data\":" + row[2] + ",\"minecraft:firework_explosion\":{colors:[I;16777215],shape:\"small_ball\"},\"minecraft:food\":{can_always_eat:1b,eat_seconds:1000000.0f,nutrition:0,saturation:0.0f},\"minecraft:hide_additional_tooltip\":{},\"minecraft:item_name\":'\"" + item_name + "\"'},count:1,id:\"minecraft:firework_star\",type:\"minecraft:item\"},type:\"roughlyenoughitems:entry_stack\"}"
+    rei_json['favorites'].append(rei_append)
+
+    emi_append = {}
+    emi_append['stack'] = "item:minecraft:firework_star{\"minecraft:custom_data\":{nw_fur:1b,nw_fur_id_buildin:" + row[0] + "},\"minecraft:custom_model_data\":" + row[2] + ",\"minecraft:firework_explosion\":{colors:[I;16777215],shape:\"small_ball\"},\"minecraft:food\":{can_always_eat:1b,eat_seconds:1000000.0f,nutrition:0,saturation:0.0f},\"minecraft:hide_additional_tooltip\":{},\"minecraft:item_name\":\u0027\"" + item_name + "\"\u0027}"
+    if row[10] == '1':
+        emi_append['recipe'] = "nw:furniture_" + row[0]
+    emi_json['favorites'].append(emi_append)
+
     if row[10] == '1':
         newfilename = '/furniture_' + row[0] + '.json'
         recipe_list.write('"nw:furniture_' + row[0] + '",\n')
@@ -270,5 +387,11 @@ for row in rows:
 
 propfile.close()
 recipe_list.close()
+
+rei_file.write(json.dumps(rei_json, indent=4, ensure_ascii=False))
+rei_file.close()
+
+emi_file.write(json.dumps(emi_json, indent=2, ensure_ascii=False))
+emi_file.close()
 
 print(len(rows), 'files generated at', o_path)
