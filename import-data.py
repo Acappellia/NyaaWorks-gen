@@ -31,6 +31,11 @@ try:
 except FileExistsError: 
     print('directory alreay exists')
 
+try:
+    os.mkdir(abs_path + '/' + o_path + '/extra_recipes/')
+except FileExistsError: 
+    print('directory alreay exists')
+
 print('Reading from ', f_path)
 
 #read file
@@ -149,8 +154,29 @@ emi_json = {
 }
 
 #template
-recipe_shaped = {"type": "minecraft:crafting_shaped", "category": "building", "show_notification": True, "key": {}, "pattern": [], "result": {"count": 1, "id": "minecraft:firework_star", "components": {"minecraft:item_name": "Template", "minecraft:custom_model_data": 10000, "minecraft:custom_data": ""}}}
-recipe_shapeless = {"type": "minecraft:crafting_shapeless", "category": "building", "show_notification": True, "ingredients": [], "result": {"count": 1, "id": "minecraft:firework_star", "components": {"minecraft:item_name": "Template", "minecraft:custom_model_data": 10000, "minecraft:custom_data": ""}}}
+recipe_shaped = {
+    "type": "minecraft:crafting_shaped", 
+    "category": "building", 
+    "show_notification": True, 
+    "key": {}, 
+    "pattern": [], 
+    "result": {"count": 1, "id": "minecraft:firework_star", "components": {"minecraft:item_name": "Template", "minecraft:custom_model_data": 10000, "minecraft:custom_data": ""}}
+}
+recipe_shapeless = {
+    "type": "minecraft:crafting_shapeless", 
+    "category": "building", 
+    "show_notification": True, 
+    "ingredients": [], 
+    "result": {"count": 1, "id": "minecraft:firework_star", "components": {"minecraft:item_name": "Template", "minecraft:custom_model_data": 10000, "minecraft:custom_data": ""}}
+}
+recipe_cut = {
+    "type": "minecraft:stonecutting",
+    "category": "building", 
+    "show_notification": True, 
+    "ingredient": {},
+    "result": {"count": 1, "id": "minecraft:firework_star", "components": {"minecraft:item_name": "Template", "minecraft:custom_model_data": 10000, "minecraft:custom_data": ""}}
+}
+
 
 #generate command
 for row in rows:
@@ -195,12 +221,44 @@ for row in rows:
     emi_append['stack'] = "item:minecraft:firework_star{\"minecraft:custom_data\":{nw_fur:1b,nw_fur_id_buildin:" + row[0] + "},\"minecraft:custom_model_data\":" + row[2] + ",\"minecraft:firework_explosion\":{colors:[I;16777215],shape:\"small_ball\"},\"minecraft:food\":{can_always_eat:1b,eat_seconds:1000000.0f,nutrition:0,saturation:0.0f},\"minecraft:hide_additional_tooltip\":{},\"minecraft:item_name\":\u0027\"" + item_name + "\"\u0027}"
     if row[10] == '1':
         emi_append['recipe'] = "nw:furniture_" + row[0]
+    if row[25] == '1':
+        emi_append['recipe'] = "nw:furniture_" + row[0] + "_cut"
     emi_json['favorites'].append(emi_append)
+
+    if row[25] == '1':
+        newfilename = '/furniture_' + row[0] + '_cut.json'
+        recipe_list.write('"nw:furniture_' + row[0] + '_cut",\n')
+        if row[27] == '1':
+            recipefile = open(abs_path + '/' + o_path + '/extra_recipes' + newfilename, 'w')
+        else:
+            recipefile = open(abs_path + '/' + o_path + newfilename, 'w')
+        jsondata = recipe_cut
+        jsondata['ingredient'] = {}
+        if row[26][0] == '#':
+            row[26] = row[26].lstrip('#')
+            jsondata['ingredient']['tag'] = row[26]
+        else:
+            jsondata['ingredient']['item'] = row[26]
+        jsondata['result']['components']['minecraft:item_name'] = '"'
+        if row[24] != '':
+            jsondata['result']['components']['minecraft:item_name'] = '"🛠 '
+        jsondata['result']['components']['minecraft:item_name'] += row[1] + '"'
+        jsondata['result']['components']['minecraft:custom_data'] = "{nw_fur: 1b, nw_fur_id_buildin: " + row[0] + "}"
+        jsondata['result']['components']['minecraft:custom_model_data'] = int(row[2])
+        jsondata['result']['components']['minecraft:firework_explosion'] = {"shape": "small_ball", "colors": [16777215]}
+        jsondata['result']['components']['minecraft:hide_additional_tooltip'] = {}
+        jsondata['result']['components']['minecraft:food'] = {"saturation": 0.0, "nutrition": 0, "can_always_eat": True, "eat_seconds": 1000000.0}
+        recipefile.write(json.dumps(jsondata))
+        recipefile.close()
+        #print("generated", row[0])
 
     if row[10] == '1':
         newfilename = '/furniture_' + row[0] + '.json'
         recipe_list.write('"nw:furniture_' + row[0] + '",\n')
-        recipefile = open(abs_path + '/' + o_path + newfilename, 'w')
+        if row[27] == '1':
+            recipefile = open(abs_path + '/' + o_path + '/extra_recipes' + newfilename, 'w')
+        else:
+            recipefile = open(abs_path + '/' + o_path + newfilename, 'w')
         if row[11] == '1':
             jsondata = recipe_shapeless
             jsondata['ingredients'] = []
