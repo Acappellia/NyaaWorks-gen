@@ -227,10 +227,11 @@ for row in rows:
 
     if row[25] == '1':
         newfilename = '/furniture_' + row[0] + '_cut.json'
-        recipe_list.write('"nw:furniture_' + row[0] + '_cut",\n')
         if row[27] == '1':
+            recipe_list.write('"nwr:furniture_' + row[0] + '_cut",\n')
             recipefile = open(abs_path + '/' + o_path + '/extra_recipes' + newfilename, 'w')
         else:
+            recipe_list.write('"nw:furniture_' + row[0] + '_cut",\n')
             recipefile = open(abs_path + '/' + o_path + newfilename, 'w')
         jsondata = recipe_cut
         jsondata['ingredient'] = {}
@@ -254,10 +255,11 @@ for row in rows:
 
     if row[10] == '1':
         newfilename = '/furniture_' + row[0] + '.json'
-        recipe_list.write('"nw:furniture_' + row[0] + '",\n')
         if row[27] == '1':
+            recipe_list.write('"nwr:furniture_' + row[0] + '",\n')
             recipefile = open(abs_path + '/' + o_path + '/extra_recipes' + newfilename, 'w')
         else:
+            recipe_list.write('"nw:furniture_' + row[0] + '",\n')
             recipefile = open(abs_path + '/' + o_path + newfilename, 'w')
         if row[11] == '1':
             jsondata = recipe_shapeless
