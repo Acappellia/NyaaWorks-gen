@@ -216,11 +216,15 @@ for row in rows:
     writeline += '}}}\n'
     propfile.write(writeline)
 
-    rei_append = "{data:{components:{\"minecraft:custom_data\":{nw_fur:1b,nw_fur_id_buildin:" + row[0] + "},\"minecraft:custom_model_data\":" + row[2] + ",\"minecraft:firework_explosion\":{colors:[I;16777215],shape:\"small_ball\"},\"minecraft:food\":{can_always_eat:1b,eat_seconds:1000000.0f,nutrition:0,saturation:0.0f},\"minecraft:hide_additional_tooltip\":{},\"minecraft:item_name\":'\"" + item_name + "\"'},count:1,id:\"minecraft:firework_star\",type:\"minecraft:item\"},type:\"roughlyenoughitems:entry_stack\"}"
-    rei_json['favorites'].append(rei_append)
-
     emi_append = {}
-    emi_append['stack'] = "item:minecraft:firework_star{\"minecraft:custom_data\":{nw_fur:1b,nw_fur_id_buildin:" + row[0] + "},\"minecraft:custom_model_data\":" + row[2] + ",\"minecraft:firework_explosion\":{colors:[I;16777215],shape:\"small_ball\"},\"minecraft:food\":{can_always_eat:1b,eat_seconds:1000000.0f,nutrition:0,saturation:0.0f},\"minecraft:hide_additional_tooltip\":{},\"minecraft:item_name\":\u0027\"" + item_name + "\"\u0027}"
+    if row[27] == '1':
+        rei_append = "{data:{components:{\"minecraft:custom_data\":{nw_salvage:1b,nw_fur:1b,nw_fur_id_buildin:" + row[0] + "},\"minecraft:custom_model_data\":" + row[2] + ",\"minecraft:firework_explosion\":{colors:[I;16777215],shape:\"small_ball\"},\"minecraft:food\":{can_always_eat:1b,eat_seconds:1000000.0f,nutrition:0,saturation:0.0f},\"minecraft:hide_additional_tooltip\":{},\"minecraft:item_name\":'\"" + item_name + "\"'},count:1,id:\"minecraft:firework_star\",type:\"minecraft:item\"},type:\"roughlyenoughitems:entry_stack\"}"
+        emi_append['stack'] = "item:minecraft:firework_star{\"minecraft:custom_data\":{nw_salvage:1b,nw_fur:1b,nw_fur_id_buildin:" + row[0] + "},\"minecraft:custom_model_data\":" + row[2] + ",\"minecraft:firework_explosion\":{colors:[I;16777215],shape:\"small_ball\"},\"minecraft:food\":{can_always_eat:1b,eat_seconds:1000000.0f,nutrition:0,saturation:0.0f},\"minecraft:hide_additional_tooltip\":{},\"minecraft:item_name\":\u0027\"" + item_name + "\"\u0027}"
+    else:
+        rei_append = "{data:{components:{\"minecraft:custom_data\":{nw_fur:1b,nw_fur_id_buildin:" + row[0] + "},\"minecraft:custom_model_data\":" + row[2] + ",\"minecraft:firework_explosion\":{colors:[I;16777215],shape:\"small_ball\"},\"minecraft:food\":{can_always_eat:1b,eat_seconds:1000000.0f,nutrition:0,saturation:0.0f},\"minecraft:hide_additional_tooltip\":{},\"minecraft:item_name\":'\"" + item_name + "\"'},count:1,id:\"minecraft:firework_star\",type:\"minecraft:item\"},type:\"roughlyenoughitems:entry_stack\"}"
+        emi_append['stack'] = "item:minecraft:firework_star{\"minecraft:custom_data\":{nw_fur:1b,nw_fur_id_buildin:" + row[0] + "},\"minecraft:custom_model_data\":" + row[2] + ",\"minecraft:firework_explosion\":{colors:[I;16777215],shape:\"small_ball\"},\"minecraft:food\":{can_always_eat:1b,eat_seconds:1000000.0f,nutrition:0,saturation:0.0f},\"minecraft:hide_additional_tooltip\":{},\"minecraft:item_name\":\u0027\"" + item_name + "\"\u0027}"
+
+    rei_json['favorites'].append(rei_append)
     if row[10] == '1':
         emi_append['recipe'] = "nw:furniture_" + row[0]
     if row[25] == '1':
