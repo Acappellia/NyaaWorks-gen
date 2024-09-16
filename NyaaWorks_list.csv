@@ -84,7 +84,7 @@
 82,垂直系绳,10083,nw:rope_vertical,1,,,,,,1,,#,#,#,string,,,,,,,,,84,,,
 83,绳结环,10084,nw:rope_loop,1,,,,,,1,,#,# #,#,string,,,,,,,,,,,,
 84,水平系绳,10085,nw:rope_horizontal,1,,,,,,,,,,,,,,,,,,,,82,,,
-85,铜制水龙头,10086,nw:copper_faucet,1,,,,,,1,,$,###,#,copper_ingot,iron_trapdoor,,,,,,,,,,,
+85,铜制水龙头,10086,nw:copper_faucet,1,,,,,,1,,$,###, #,copper_ingot,iron_trapdoor,,,,,,,,,,,
 86,橡木双色遮阳棚,10087,nw:dual_color_parasol,1,,,,,,,,###,$ $,% %,#wool_carpets,oak_slab,stick,,,,,,,,1,stripped_oak_wood,
 87,铜制烛台,10088,nw:copper_candlestick,1,,,1,,,1,,#,$,#,copper_ingot,lightning_rod,,,,,,,,,,,
 88,铜制沙漏,10089,nw:copper_hourglass,,,,,,1,1,,###,$%$,###,copper_ingot,glass,sand,,,,,,,,,,
@@ -119,11 +119,11 @@
 117,空碗,10120,nw:empty_bowl,1,,,,,1,1,,,$,$,,bowl,,,,,,,,,,,
 118,空盘,10121,nw:empty_plate,1,,,,,1,1,,,,$$$,,smooth_quartz_slab,,,,,,,,,,,
 119,刀叉,10122,nw:knife_and_fork,1,,,,,1,1,1,,#$,,iron_sword,trident,,,,,,,,,,,
-120,壁挂刀架,10123,nw:wall_knife,1,,,,,,1,,$,###,,iron_sword,item_frame,,,,,,,,,,,
-121,壁挂厨具架,10124,nw:wall_kitchenware,1,,,,,,1,,$,###,,iron_shovel,item_frame,,,,,,,,,,,
-122,壁挂锅架,10125,nw:wall_pan,1,,,,,,1,,$,###,,cauldron,item_frame,,,,,,,,,,,
-123,架起的平底锅,10126,nw:pan_set,1,,,,,,1,,,#,$$$,cauldron,iron_bars,,,,,,,,,,,
-124,架起的煮锅,10127,nw:pot_set,1,,,,,,1,,#,#,$$$,cauldron,iron_bars,,,,,,,,,,,
+120,壁挂刀架,10123,nw:wall_knife,1,,,,,,1,, $,###,,iron_sword,item_frame,,,,,,,,,,,
+121,壁挂厨具架,10124,nw:wall_kitchenware,1,,,,,,1,, $,###,,iron_shovel,item_frame,,,,,,,,,,,
+122,壁挂锅架,10125,nw:wall_pan,1,,,,,,1,, $,###,,cauldron,item_frame,,,,,,,,,,,
+123,架起的平底锅,10126,nw:pan_set,1,,,,,,1,,, #,$$$,cauldron,iron_bars,,,,,,,,,,,
+124,架起的煮锅,10127,nw:pot_set,1,,,,,,1,, #, #,$$$,cauldron,iron_bars,,,,,,,,,,,
 125,架起的烤架,10128,nw:grill_set,1,,,,,,1,,,,$$$,,iron_bars,,,,,,,,,,,
 126,水瓶,10129,nw:water_bottle,1,,,,,1,1,,,&,#,glass_bottle,,,water_bucket,,,,,,,,,
 127,空瓶,10130,nw:empty_bottle,1,,,,,1,1,,,#,#,glass_bottle,,,,,,,,,,,,
@@ -131,9 +131,9 @@
 129,空的喷溅水瓶,10132,nw:empty_bottle_splash,1,,,,,1,1,,,$,#,glass_bottle,gunpowder,,,,,,,,,,,
 130,滞留水瓶,10133,nw:water_bottle_lingering,1,,,,,1,1,,&,$,#,glass_bottle,dragon_breath,,water_bucket,,,,,,,,,
 131,空的滞留水瓶,10134,nw:empty_bottle_lingering,1,,,,,1,1,,,$,#,glass_bottle,dragon_breath,,,,,,,,,,,
-132,普通水瓶组,10135,nw:water_bottle_group_normal,1,,,,,1,1,,,&,###,glass_bottle,,,water_bucket,,,,,,,,,
+132,普通水瓶组,10135,nw:water_bottle_group_normal,1,,,,,1,1,,, &,###,glass_bottle,,,water_bucket,,,,,,,,,
 133,普通空瓶组,10136,nw:empty_bottle_group_normal,1,,,,,1,1,,,,###,glass_bottle,,,,,,,,,,,,
-134,水瓶组,10137,nw:water_bottle_group,1,,,,,1,1,,&,$ %,###,glass_bottle,gunpowder,dragon_breath,water_bucket,,,,,,,,,
+134,水瓶组,10137,nw:water_bottle_group,1,,,,,1,1,, &,$ %,###,glass_bottle,gunpowder,dragon_breath,water_bucket,,,,,,,,,
 135,空瓶组,10138,nw:empty_bottle_group,1,,,,,1,1,,,$ %,###,glass_bottle,gunpowder,dragon_breath,,,,,,,,,,
 136,一桶水,10139,nw:water_bucket,1,,,,,1,1,,,$,#,bucket,water_bucket,,,,,,,,,,,
 137,空桶,10140,nw:empty_bucket,1,,,,,1,1,,,#,#,bucket,,,,,,,,,,,,
@@ -961,9 +961,9 @@
 959,《染色指南》染色操作台,5002,nw:stain_table,,,,1,,,1,,$ $,$%$,###,#wooden_slabs,stick,book,,,,,,,,,,
 960,家具去色魔法锅,6003,nw:decolor_cauldron,,,,1,,,1,1,,,,cauldron,brush,water_bucket,,,,,,,,,,
 961,签字台,5003,nw:sign_table,,,,1,,,1,,,$%&,###,#wooden_slabs,feather,paper,ink_sac,,,,,,,,,
-962,祝福圣台,6001,ng:blessing_table,,,,1,,,1,,%,#$#,###,#wooden_slabs,amethyst_block,amethyst_shard,,,,,,,,,,
-963,液压机,6004,ng:hydraulic_press,,,,1,,,1,,#,%$%,%%%,piston,iron_block,#planks,,,,,,,,,,
-964,友谊的新枝,7001,ng:friend_slate,,,,1,,,1,,#$#,#,,brick,amethyst_shard,,,,,,,,,,,
+962,祝福圣台,6001,ng:blessing_table,,,,1,,,1,, %,#$#,###,#wooden_slabs,amethyst_block,amethyst_shard,,,,,,,,,,
+963,液压机,6004,ng:hydraulic_press,,,,1,,,1,, #,%$%,%%%,piston,iron_block,#planks,,,,,,,,,,
+964,友谊的新枝,7001,ng:friend_slate,,,,1,,,1,,#$#, #,,brick,amethyst_shard,,,,,,,,,,,
 965,相机A,25001,,1,,,,,1,,,,,,,,,,,,,,,966,1,gold_block,1
 966,相机B,25002,,1,,,,,1,,,,,,,,,,,,,,,967,,,
 967,相机C,25003,,1,,,,,1,,,,,,,,,,,,,,,965,,,
@@ -1033,3 +1033,50 @@
 1031,原木去皮机,6006,,,,,1,,,1,,# %,$$$,$$$,iron_ingot,#logs,iron_axe,,,,,,,,,,
 1032,混凝土固化机,6007,,,,,1,,,1,, $,%$%, #,cauldron,stick,iron_ingot,,,,,,,,,,
 1033,高温氧化台,6008,,,,,1,,,1,,,$$$,#%#,copper_ingot,iron_trapdoor,flint_and_steel,,,,,,,,,,
+1034,雏菊花瓶,100001,,1,,,,,1,,,,,,,,,,,,,,,,1,white_glazed_terracotta,1
+1035,火焰多肉盆栽,100002,,1,,,,,1,,,,,,,,,,,,,,,,1,white_glazed_terracotta,1
+1036,团状多肉盆栽,100003,,1,,,,,1,,,,,,,,,,,,,,,,1,white_glazed_terracotta,1
+1037,松树盆栽,100004,,1,,,,,1,,,,,,,,,,,,,,,,1,white_glazed_terracotta,1
+1038,风信子花瓶,100005,,1,,,,,1,,,,,,,,,,,,,,,,1,white_glazed_terracotta,1
+1039,芦荟盆栽,100006,,1,,,,,1,,,,,,,,,,,,,,,,1,white_glazed_terracotta,1
+1040,开花多肉盆栽,100007,,1,,,,,1,,,,,,,,,,,,,,,,1,white_glazed_terracotta,1
+1041,花苞多肉盆栽,100008,,1,,,,,1,,,,,,,,,,,,,,,,1,white_glazed_terracotta,1
+1042,夹竹桃花瓶,100009,,1,,,,,1,,,,,,,,,,,,,,,,1,white_glazed_terracotta,1
+1043,向日葵花瓶,100010,,1,,,,,1,,,,,,,,,,,,,,,,1,white_glazed_terracotta,1
+1044,竹盆栽,100011,,1,,,,,1,,,,,,,,,,,,,,,,1,white_glazed_terracotta,1
+1045,圆柱花盆,100012,,1,,,1,,1,,,,,,,,,,,,,,,1046,1,white_glazed_terracotta,1
+1046,圆柱花盆（枝干）,100013,,1,,,1,,1,,,,,,,,,,,,,,,1045,,,,
+1047,突边缘花盆,100014,,1,,,1,,1,,,,,,,,,,,,,,,1048,1,white_glazed_terracotta,1
+1048,突边缘花盆（枝干）,100015,,1,,,1,,1,,,,,,,,,,,,,,,1047,,,,
+1049,纸盒花盆,100016,,1,,,1,,1,,,,,,,,,,,,,,,1050,1,white_glazed_terracotta,1
+1050,纸盒花盆（枝干）,100017,,1,,,1,,1,,,,,,,,,,,,,,,1049,,,,
+1051,方形花盆,100018,,1,,,1,,1,,,,,,,,,,,,,,,1052,1,white_glazed_terracotta,1
+1052,方形花盆（枝干）,100019,,1,,,1,,1,,,,,,,,,,,,,,,1051,,,,
+1053,透明圆柱花盆,100020,,1,,,1,,1,,,,,,,,,,,,,,,1054,1,white_glazed_terracotta,1
+1054,透明圆柱花盆（枝干）,100021,,1,,,1,,1,,,,,,,,,,,,,,,1053,,,,
+1055,透明方形花盆,100022,,1,,,1,,1,,,,,,,,,,,,,,,1056,1,white_glazed_terracotta,1
+1056,透明方形花盆（枝干）,100023,,1,,,1,,1,,,,,,,,,,,,,,,1055,,,,
+1057,木质小板凳,100024,,1,,1,1,,1,,,,,,,,,,,,,,,,1,white_glazed_terracotta,1
+1058,纯色坐垫,100025,,1,,1,,,1,,,,,,,,,,,,,,,,1,white_glazed_terracotta,1
+1059,斑点坐垫,100026,,1,,1,,,1,,,,,,,,,,,,,,,,1,white_glazed_terracotta,1
+1060,条纹坐垫,100027,,1,,1,,,1,,,,,,,,,,,,,,,,1,white_glazed_terracotta,1
+1061,打包箱,100028,,1,,,1,,1,,,,,,,,,,,,,,,,1,white_glazed_terracotta,1
+1062,单层花盆架,100029,,1,,,1,,,,,,,,,,,,,,,,,,1,white_glazed_terracotta,1
+1063,石灯底座,100030,,1,,,1,,,,,,,,,,,,,,,,,,1,white_glazed_terracotta,1
+1064,石灯,100031,,,,,,1,,,,,,,,,,,,,,,,,1,white_glazed_terracotta,1
+1065,庭院提灯,100033,,,,,,1,1,,,,,,,,,,,,,,,,1,white_glazed_terracotta,1
+1066,火盆,100035,,,,,,1,1,,,,,,,,,,,,,,,,1,white_glazed_terracotta,1
+1067,香薰蜡烛,100037,,,,,,1,1,,,,,,,,,,,,,,,,1,white_glazed_terracotta,1
+1068,壁炉,100039,,,,,1,,1,,,,,,,,,,,,,,,,1,white_glazed_terracotta,1
+1069,壁挂摆钟,100041,,,,,,,,,,,,,,,,,,,,,,,1,white_glazed_terracotta,1
+1070,花园栅栏门,100043,,,,,,,,,,,,,,,,,,,,,,,1,white_glazed_terracotta,1
+1071,爬山虎架栅栏,100045,,1,,,1,,,,,,,,,,,,,,,,,1073,,,
+1072,爬山虎架栅栏转角,100046,,1,,,1,,,,,,,,,,,,,,,,,1074,,,,
+1073,爬山虎架栅栏双向,100047,,1,,,1,,,,,,,,,,,,,,,,,1072,1,white_glazed_terracotta,1
+1074,爬山虎架栅栏三向,100048,,1,,,1,,,,,,,,,,,,,,,,,1075,,,,
+1075,爬山虎架栅栏四向,100049,,1,,,1,,,,,,,,,,,,,,,,,1071,,,,
+1076,拉绳栅栏,100050,,1,,,1,,,,,,,,,,,,,,,,,1078,,,
+1077,拉绳栅栏转角,100051,,1,,,1,,,,,,,,,,,,,,,,,1079,,,,
+1078,拉绳栅栏双向,100052,,1,,,1,,,,,,,,,,,,,,,,,1077,1,white_glazed_terracotta,1
+1079,拉绳栅栏三向,100053,,1,,,1,,,,,,,,,,,,,,,,,1080,,,,
+1080,拉绳栅栏四向,100054,,1,,,1,,,,,,,,,,,,,,,,,1076,,,,
