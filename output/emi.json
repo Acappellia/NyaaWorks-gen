@@ -3906,42 +3906,42 @@
       "recipe": "nw:furniture_1045_cut"
     },
     {
-      "stack": "item:minecraft:firework_star{\"minecraft:custom_data\":{nw_fur:1b,nw_fur_id_buildin:1046},\"minecraft:custom_model_data\":100013,\"minecraft:firework_explosion\":{colors:[I;16777215],shape:\"small_ball\"},\"minecraft:food\":{can_always_eat:1b,eat_seconds:1000000.0f,nutrition:0,saturation:0.0f},\"minecraft:hide_additional_tooltip\":{},\"minecraft:item_name\":'\"🛠 圆柱花盆（枝干）\"'}"
+      "stack": "item:minecraft:firework_star{\"minecraft:custom_data\":{nw_salvage:1b,nw_fur:1b,nw_fur_id_buildin:1046},\"minecraft:custom_model_data\":100013,\"minecraft:firework_explosion\":{colors:[I;16777215],shape:\"small_ball\"},\"minecraft:food\":{can_always_eat:1b,eat_seconds:1000000.0f,nutrition:0,saturation:0.0f},\"minecraft:hide_additional_tooltip\":{},\"minecraft:item_name\":'\"🛠 圆柱花盆（枝干）\"'}"
     },
     {
       "stack": "item:minecraft:firework_star{\"minecraft:custom_data\":{nw_salvage:1b,nw_fur:1b,nw_fur_id_buildin:1047},\"minecraft:custom_model_data\":100014,\"minecraft:firework_explosion\":{colors:[I;16777215],shape:\"small_ball\"},\"minecraft:food\":{can_always_eat:1b,eat_seconds:1000000.0f,nutrition:0,saturation:0.0f},\"minecraft:hide_additional_tooltip\":{},\"minecraft:item_name\":'\"🛠 突边缘花盆\"'}",
       "recipe": "nw:furniture_1047_cut"
     },
     {
-      "stack": "item:minecraft:firework_star{\"minecraft:custom_data\":{nw_fur:1b,nw_fur_id_buildin:1048},\"minecraft:custom_model_data\":100015,\"minecraft:firework_explosion\":{colors:[I;16777215],shape:\"small_ball\"},\"minecraft:food\":{can_always_eat:1b,eat_seconds:1000000.0f,nutrition:0,saturation:0.0f},\"minecraft:hide_additional_tooltip\":{},\"minecraft:item_name\":'\"🛠 突边缘花盆（枝干）\"'}"
+      "stack": "item:minecraft:firework_star{\"minecraft:custom_data\":{nw_salvage:1b,nw_fur:1b,nw_fur_id_buildin:1048},\"minecraft:custom_model_data\":100015,\"minecraft:firework_explosion\":{colors:[I;16777215],shape:\"small_ball\"},\"minecraft:food\":{can_always_eat:1b,eat_seconds:1000000.0f,nutrition:0,saturation:0.0f},\"minecraft:hide_additional_tooltip\":{},\"minecraft:item_name\":'\"🛠 突边缘花盆（枝干）\"'}"
     },
     {
       "stack": "item:minecraft:firework_star{\"minecraft:custom_data\":{nw_salvage:1b,nw_fur:1b,nw_fur_id_buildin:1049},\"minecraft:custom_model_data\":100016,\"minecraft:firework_explosion\":{colors:[I;16777215],shape:\"small_ball\"},\"minecraft:food\":{can_always_eat:1b,eat_seconds:1000000.0f,nutrition:0,saturation:0.0f},\"minecraft:hide_additional_tooltip\":{},\"minecraft:item_name\":'\"🛠 纸盒花盆\"'}",
       "recipe": "nw:furniture_1049_cut"
     },
     {
-      "stack": "item:minecraft:firework_star{\"minecraft:custom_data\":{nw_fur:1b,nw_fur_id_buildin:1050},\"minecraft:custom_model_data\":100017,\"minecraft:firework_explosion\":{colors:[I;16777215],shape:\"small_ball\"},\"minecraft:food\":{can_always_eat:1b,eat_seconds:1000000.0f,nutrition:0,saturation:0.0f},\"minecraft:hide_additional_tooltip\":{},\"minecraft:item_name\":'\"🛠 纸盒花盆（枝干）\"'}"
+      "stack": "item:minecraft:firework_star{\"minecraft:custom_data\":{nw_salvage:1b,nw_fur:1b,nw_fur_id_buildin:1050},\"minecraft:custom_model_data\":100017,\"minecraft:firework_explosion\":{colors:[I;16777215],shape:\"small_ball\"},\"minecraft:food\":{can_always_eat:1b,eat_seconds:1000000.0f,nutrition:0,saturation:0.0f},\"minecraft:hide_additional_tooltip\":{},\"minecraft:item_name\":'\"🛠 纸盒花盆（枝干）\"'}"
     },
     {
       "stack": "item:minecraft:firework_star{\"minecraft:custom_data\":{nw_salvage:1b,nw_fur:1b,nw_fur_id_buildin:1051},\"minecraft:custom_model_data\":100018,\"minecraft:firework_explosion\":{colors:[I;16777215],shape:\"small_ball\"},\"minecraft:food\":{can_always_eat:1b,eat_seconds:1000000.0f,nutrition:0,saturation:0.0f},\"minecraft:hide_additional_tooltip\":{},\"minecraft:item_name\":'\"🛠 方形花盆\"'}",
       "recipe": "nw:furniture_1051_cut"
     },
     {
-      "stack": "item:minecraft:firework_star{\"minecraft:custom_data\":{nw_fur:1b,nw_fur_id_buildin:1052},\"minecraft:custom_model_data\":100019,\"minecraft:firework_explosion\":{colors:[I;16777215],shape:\"small_ball\"},\"minecraft:food\":{can_always_eat:1b,eat_seconds:1000000.0f,nutrition:0,saturation:0.0f},\"minecraft:hide_additional_tooltip\":{},\"minecraft:item_name\":'\"🛠 方形花盆（枝干）\"'}"
+      "stack": "item:minecraft:firework_star{\"minecraft:custom_data\":{nw_salvage:1b,nw_fur:1b,nw_fur_id_buildin:1052},\"minecraft:custom_model_data\":100019,\"minecraft:firework_explosion\":{colors:[I;16777215],shape:\"small_ball\"},\"minecraft:food\":{can_always_eat:1b,eat_seconds:1000000.0f,nutrition:0,saturation:0.0f},\"minecraft:hide_additional_tooltip\":{},\"minecraft:item_name\":'\"🛠 方形花盆（枝干）\"'}"
     },
     {
       "stack": "item:minecraft:firework_star{\"minecraft:custom_data\":{nw_salvage:1b,nw_fur:1b,nw_fur_id_buildin:1053},\"minecraft:custom_model_data\":100020,\"minecraft:firework_explosion\":{colors:[I;16777215],shape:\"small_ball\"},\"minecraft:food\":{can_always_eat:1b,eat_seconds:1000000.0f,nutrition:0,saturation:0.0f},\"minecraft:hide_additional_tooltip\":{},\"minecraft:item_name\":'\"🛠 透明圆柱花盆\"'}",
       "recipe": "nw:furniture_1053_cut"
     },
     {
-      "stack": "item:minecraft:firework_star{\"minecraft:custom_data\":{nw_fur:1b,nw_fur_id_buildin:1054},\"minecraft:custom_model_data\":100021,\"minecraft:firework_explosion\":{colors:[I;16777215],shape:\"small_ball\"},\"minecraft:food\":{can_always_eat:1b,eat_seconds:1000000.0f,nutrition:0,saturation:0.0f},\"minecraft:hide_additional_tooltip\":{},\"minecraft:item_name\":'\"🛠 透明圆柱花盆（枝干）\"'}"
+      "stack": "item:minecraft:firework_star{\"minecraft:custom_data\":{nw_salvage:1b,nw_fur:1b,nw_fur_id_buildin:1054},\"minecraft:custom_model_data\":100021,\"minecraft:firework_explosion\":{colors:[I;16777215],shape:\"small_ball\"},\"minecraft:food\":{can_always_eat:1b,eat_seconds:1000000.0f,nutrition:0,saturation:0.0f},\"minecraft:hide_additional_tooltip\":{},\"minecraft:item_name\":'\"🛠 透明圆柱花盆（枝干）\"'}"
     },
     {
       "stack": "item:minecraft:firework_star{\"minecraft:custom_data\":{nw_salvage:1b,nw_fur:1b,nw_fur_id_buildin:1055},\"minecraft:custom_model_data\":100022,\"minecraft:firework_explosion\":{colors:[I;16777215],shape:\"small_ball\"},\"minecraft:food\":{can_always_eat:1b,eat_seconds:1000000.0f,nutrition:0,saturation:0.0f},\"minecraft:hide_additional_tooltip\":{},\"minecraft:item_name\":'\"🛠 透明方形花盆\"'}",
       "recipe": "nw:furniture_1055_cut"
     },
     {
-      "stack": "item:minecraft:firework_star{\"minecraft:custom_data\":{nw_fur:1b,nw_fur_id_buildin:1056},\"minecraft:custom_model_data\":100023,\"minecraft:firework_explosion\":{colors:[I;16777215],shape:\"small_ball\"},\"minecraft:food\":{can_always_eat:1b,eat_seconds:1000000.0f,nutrition:0,saturation:0.0f},\"minecraft:hide_additional_tooltip\":{},\"minecraft:item_name\":'\"🛠 透明方形花盆（枝干）\"'}"
+      "stack": "item:minecraft:firework_star{\"minecraft:custom_data\":{nw_salvage:1b,nw_fur:1b,nw_fur_id_buildin:1056},\"minecraft:custom_model_data\":100023,\"minecraft:firework_explosion\":{colors:[I;16777215],shape:\"small_ball\"},\"minecraft:food\":{can_always_eat:1b,eat_seconds:1000000.0f,nutrition:0,saturation:0.0f},\"minecraft:hide_additional_tooltip\":{},\"minecraft:item_name\":'\"🛠 透明方形花盆（枝干）\"'}"
     },
     {
       "stack": "item:minecraft:firework_star{\"minecraft:custom_data\":{nw_salvage:1b,nw_fur:1b,nw_fur_id_buildin:1057},\"minecraft:custom_model_data\":100024,\"minecraft:firework_explosion\":{colors:[I;16777215],shape:\"small_ball\"},\"minecraft:food\":{can_always_eat:1b,eat_seconds:1000000.0f,nutrition:0,saturation:0.0f},\"minecraft:hide_additional_tooltip\":{},\"minecraft:item_name\":'\"木质小板凳\"'}",
@@ -4000,36 +4000,124 @@
       "recipe": "nw:furniture_1070_cut"
     },
     {
-      "stack": "item:minecraft:firework_star{\"minecraft:custom_data\":{nw_fur:1b,nw_fur_id_buildin:1071},\"minecraft:custom_model_data\":100045,\"minecraft:firework_explosion\":{colors:[I;16777215],shape:\"small_ball\"},\"minecraft:food\":{can_always_eat:1b,eat_seconds:1000000.0f,nutrition:0,saturation:0.0f},\"minecraft:hide_additional_tooltip\":{},\"minecraft:item_name\":'\"🛠 爬山虎架栅栏\"'}"
+      "stack": "item:minecraft:firework_star{\"minecraft:custom_data\":{nw_salvage:1b,nw_fur:1b,nw_fur_id_buildin:1071},\"minecraft:custom_model_data\":100045,\"minecraft:firework_explosion\":{colors:[I;16777215],shape:\"small_ball\"},\"minecraft:food\":{can_always_eat:1b,eat_seconds:1000000.0f,nutrition:0,saturation:0.0f},\"minecraft:hide_additional_tooltip\":{},\"minecraft:item_name\":'\"🛠 爬山虎架栅栏\"'}"
     },
     {
-      "stack": "item:minecraft:firework_star{\"minecraft:custom_data\":{nw_fur:1b,nw_fur_id_buildin:1072},\"minecraft:custom_model_data\":100046,\"minecraft:firework_explosion\":{colors:[I;16777215],shape:\"small_ball\"},\"minecraft:food\":{can_always_eat:1b,eat_seconds:1000000.0f,nutrition:0,saturation:0.0f},\"minecraft:hide_additional_tooltip\":{},\"minecraft:item_name\":'\"🛠 爬山虎架栅栏转角\"'}"
+      "stack": "item:minecraft:firework_star{\"minecraft:custom_data\":{nw_salvage:1b,nw_fur:1b,nw_fur_id_buildin:1072},\"minecraft:custom_model_data\":100046,\"minecraft:firework_explosion\":{colors:[I;16777215],shape:\"small_ball\"},\"minecraft:food\":{can_always_eat:1b,eat_seconds:1000000.0f,nutrition:0,saturation:0.0f},\"minecraft:hide_additional_tooltip\":{},\"minecraft:item_name\":'\"🛠 爬山虎架栅栏转角\"'}"
     },
     {
       "stack": "item:minecraft:firework_star{\"minecraft:custom_data\":{nw_salvage:1b,nw_fur:1b,nw_fur_id_buildin:1073},\"minecraft:custom_model_data\":100047,\"minecraft:firework_explosion\":{colors:[I;16777215],shape:\"small_ball\"},\"minecraft:food\":{can_always_eat:1b,eat_seconds:1000000.0f,nutrition:0,saturation:0.0f},\"minecraft:hide_additional_tooltip\":{},\"minecraft:item_name\":'\"🛠 爬山虎架栅栏双向\"'}",
       "recipe": "nw:furniture_1073_cut"
     },
     {
-      "stack": "item:minecraft:firework_star{\"minecraft:custom_data\":{nw_fur:1b,nw_fur_id_buildin:1074},\"minecraft:custom_model_data\":100048,\"minecraft:firework_explosion\":{colors:[I;16777215],shape:\"small_ball\"},\"minecraft:food\":{can_always_eat:1b,eat_seconds:1000000.0f,nutrition:0,saturation:0.0f},\"minecraft:hide_additional_tooltip\":{},\"minecraft:item_name\":'\"🛠 爬山虎架栅栏三向\"'}"
+      "stack": "item:minecraft:firework_star{\"minecraft:custom_data\":{nw_salvage:1b,nw_fur:1b,nw_fur_id_buildin:1074},\"minecraft:custom_model_data\":100048,\"minecraft:firework_explosion\":{colors:[I;16777215],shape:\"small_ball\"},\"minecraft:food\":{can_always_eat:1b,eat_seconds:1000000.0f,nutrition:0,saturation:0.0f},\"minecraft:hide_additional_tooltip\":{},\"minecraft:item_name\":'\"🛠 爬山虎架栅栏三向\"'}"
     },
     {
-      "stack": "item:minecraft:firework_star{\"minecraft:custom_data\":{nw_fur:1b,nw_fur_id_buildin:1075},\"minecraft:custom_model_data\":100049,\"minecraft:firework_explosion\":{colors:[I;16777215],shape:\"small_ball\"},\"minecraft:food\":{can_always_eat:1b,eat_seconds:1000000.0f,nutrition:0,saturation:0.0f},\"minecraft:hide_additional_tooltip\":{},\"minecraft:item_name\":'\"🛠 爬山虎架栅栏四向\"'}"
+      "stack": "item:minecraft:firework_star{\"minecraft:custom_data\":{nw_salvage:1b,nw_fur:1b,nw_fur_id_buildin:1075},\"minecraft:custom_model_data\":100049,\"minecraft:firework_explosion\":{colors:[I;16777215],shape:\"small_ball\"},\"minecraft:food\":{can_always_eat:1b,eat_seconds:1000000.0f,nutrition:0,saturation:0.0f},\"minecraft:hide_additional_tooltip\":{},\"minecraft:item_name\":'\"🛠 爬山虎架栅栏四向\"'}"
     },
     {
-      "stack": "item:minecraft:firework_star{\"minecraft:custom_data\":{nw_fur:1b,nw_fur_id_buildin:1076},\"minecraft:custom_model_data\":100050,\"minecraft:firework_explosion\":{colors:[I;16777215],shape:\"small_ball\"},\"minecraft:food\":{can_always_eat:1b,eat_seconds:1000000.0f,nutrition:0,saturation:0.0f},\"minecraft:hide_additional_tooltip\":{},\"minecraft:item_name\":'\"🛠 拉绳栅栏\"'}"
+      "stack": "item:minecraft:firework_star{\"minecraft:custom_data\":{nw_salvage:1b,nw_fur:1b,nw_fur_id_buildin:1076},\"minecraft:custom_model_data\":100050,\"minecraft:firework_explosion\":{colors:[I;16777215],shape:\"small_ball\"},\"minecraft:food\":{can_always_eat:1b,eat_seconds:1000000.0f,nutrition:0,saturation:0.0f},\"minecraft:hide_additional_tooltip\":{},\"minecraft:item_name\":'\"🛠 拉绳栅栏\"'}"
     },
     {
-      "stack": "item:minecraft:firework_star{\"minecraft:custom_data\":{nw_fur:1b,nw_fur_id_buildin:1077},\"minecraft:custom_model_data\":100051,\"minecraft:firework_explosion\":{colors:[I;16777215],shape:\"small_ball\"},\"minecraft:food\":{can_always_eat:1b,eat_seconds:1000000.0f,nutrition:0,saturation:0.0f},\"minecraft:hide_additional_tooltip\":{},\"minecraft:item_name\":'\"🛠 拉绳栅栏转角\"'}"
+      "stack": "item:minecraft:firework_star{\"minecraft:custom_data\":{nw_salvage:1b,nw_fur:1b,nw_fur_id_buildin:1077},\"minecraft:custom_model_data\":100051,\"minecraft:firework_explosion\":{colors:[I;16777215],shape:\"small_ball\"},\"minecraft:food\":{can_always_eat:1b,eat_seconds:1000000.0f,nutrition:0,saturation:0.0f},\"minecraft:hide_additional_tooltip\":{},\"minecraft:item_name\":'\"🛠 拉绳栅栏转角\"'}"
     },
     {
       "stack": "item:minecraft:firework_star{\"minecraft:custom_data\":{nw_salvage:1b,nw_fur:1b,nw_fur_id_buildin:1078},\"minecraft:custom_model_data\":100052,\"minecraft:firework_explosion\":{colors:[I;16777215],shape:\"small_ball\"},\"minecraft:food\":{can_always_eat:1b,eat_seconds:1000000.0f,nutrition:0,saturation:0.0f},\"minecraft:hide_additional_tooltip\":{},\"minecraft:item_name\":'\"🛠 拉绳栅栏双向\"'}",
       "recipe": "nw:furniture_1078_cut"
     },
     {
-      "stack": "item:minecraft:firework_star{\"minecraft:custom_data\":{nw_fur:1b,nw_fur_id_buildin:1079},\"minecraft:custom_model_data\":100053,\"minecraft:firework_explosion\":{colors:[I;16777215],shape:\"small_ball\"},\"minecraft:food\":{can_always_eat:1b,eat_seconds:1000000.0f,nutrition:0,saturation:0.0f},\"minecraft:hide_additional_tooltip\":{},\"minecraft:item_name\":'\"🛠 拉绳栅栏三向\"'}"
+      "stack": "item:minecraft:firework_star{\"minecraft:custom_data\":{nw_salvage:1b,nw_fur:1b,nw_fur_id_buildin:1079},\"minecraft:custom_model_data\":100053,\"minecraft:firework_explosion\":{colors:[I;16777215],shape:\"small_ball\"},\"minecraft:food\":{can_always_eat:1b,eat_seconds:1000000.0f,nutrition:0,saturation:0.0f},\"minecraft:hide_additional_tooltip\":{},\"minecraft:item_name\":'\"🛠 拉绳栅栏三向\"'}"
     },
     {
-      "stack": "item:minecraft:firework_star{\"minecraft:custom_data\":{nw_fur:1b,nw_fur_id_buildin:1080},\"minecraft:custom_model_data\":100054,\"minecraft:firework_explosion\":{colors:[I;16777215],shape:\"small_ball\"},\"minecraft:food\":{can_always_eat:1b,eat_seconds:1000000.0f,nutrition:0,saturation:0.0f},\"minecraft:hide_additional_tooltip\":{},\"minecraft:item_name\":'\"🛠 拉绳栅栏四向\"'}"
+      "stack": "item:minecraft:firework_star{\"minecraft:custom_data\":{nw_salvage:1b,nw_fur:1b,nw_fur_id_buildin:1080},\"minecraft:custom_model_data\":100054,\"minecraft:firework_explosion\":{colors:[I;16777215],shape:\"small_ball\"},\"minecraft:food\":{can_always_eat:1b,eat_seconds:1000000.0f,nutrition:0,saturation:0.0f},\"minecraft:hide_additional_tooltip\":{},\"minecraft:item_name\":'\"🛠 拉绳栅栏四向\"'}"
+    },
+    {
+      "stack": "item:minecraft:firework_star{\"minecraft:custom_data\":{nw_salvage:1b,nw_fur:1b,nw_fur_id_buildin:1081},\"minecraft:custom_model_data\":31001,\"minecraft:firework_explosion\":{colors:[I;16777215],shape:\"small_ball\"},\"minecraft:food\":{can_always_eat:1b,eat_seconds:1000000.0f,nutrition:0,saturation:0.0f},\"minecraft:hide_additional_tooltip\":{},\"minecraft:item_name\":'\"豚骨拉面\"'}",
+      "recipe": "nw:furniture_1081_cut"
+    },
+    {
+      "stack": "item:minecraft:firework_star{\"minecraft:custom_data\":{nw_salvage:1b,nw_fur:1b,nw_fur_id_buildin:1082},\"minecraft:custom_model_data\":31002,\"minecraft:firework_explosion\":{colors:[I;16777215],shape:\"small_ball\"},\"minecraft:food\":{can_always_eat:1b,eat_seconds:1000000.0f,nutrition:0,saturation:0.0f},\"minecraft:hide_additional_tooltip\":{},\"minecraft:item_name\":'\"牛肉丼\"'}",
+      "recipe": "nw:furniture_1082_cut"
+    },
+    {
+      "stack": "item:minecraft:firework_star{\"minecraft:custom_data\":{nw_salvage:1b,nw_fur:1b,nw_fur_id_buildin:1083},\"minecraft:custom_model_data\":31003,\"minecraft:firework_explosion\":{colors:[I;16777215],shape:\"small_ball\"},\"minecraft:food\":{can_always_eat:1b,eat_seconds:1000000.0f,nutrition:0,saturation:0.0f},\"minecraft:hide_additional_tooltip\":{},\"minecraft:item_name\":'\"海鲜豆腐味增汤\"'}",
+      "recipe": "nw:furniture_1083_cut"
+    },
+    {
+      "stack": "item:minecraft:firework_star{\"minecraft:custom_data\":{nw_salvage:1b,nw_fur:1b,nw_fur_id_buildin:1084},\"minecraft:custom_model_data\":31004,\"minecraft:firework_explosion\":{colors:[I;16777215],shape:\"small_ball\"},\"minecraft:food\":{can_always_eat:1b,eat_seconds:1000000.0f,nutrition:0,saturation:0.0f},\"minecraft:hide_additional_tooltip\":{},\"minecraft:item_name\":'\"蛋包饭\"'}",
+      "recipe": "nw:furniture_1084_cut"
+    },
+    {
+      "stack": "item:minecraft:firework_star{\"minecraft:custom_data\":{nw_salvage:1b,nw_fur:1b,nw_fur_id_buildin:1085},\"minecraft:custom_model_data\":31005,\"minecraft:firework_explosion\":{colors:[I;16777215],shape:\"small_ball\"},\"minecraft:food\":{can_always_eat:1b,eat_seconds:1000000.0f,nutrition:0,saturation:0.0f},\"minecraft:hide_additional_tooltip\":{},\"minecraft:item_name\":'\"牛肉饭团\"'}",
+      "recipe": "nw:furniture_1085_cut"
+    },
+    {
+      "stack": "item:minecraft:firework_star{\"minecraft:custom_data\":{nw_salvage:1b,nw_fur:1b,nw_fur_id_buildin:1086},\"minecraft:custom_model_data\":31006,\"minecraft:firework_explosion\":{colors:[I;16777215],shape:\"small_ball\"},\"minecraft:food\":{can_always_eat:1b,eat_seconds:1000000.0f,nutrition:0,saturation:0.0f},\"minecraft:hide_additional_tooltip\":{},\"minecraft:item_name\":'\"海鲜刺身拼盘\"'}",
+      "recipe": "nw:furniture_1086_cut"
+    },
+    {
+      "stack": "item:minecraft:firework_star{\"minecraft:custom_data\":{nw_salvage:1b,nw_fur:1b,nw_fur_id_buildin:1087},\"minecraft:custom_model_data\":31007,\"minecraft:firework_explosion\":{colors:[I;16777215],shape:\"small_ball\"},\"minecraft:food\":{can_always_eat:1b,eat_seconds:1000000.0f,nutrition:0,saturation:0.0f},\"minecraft:hide_additional_tooltip\":{},\"minecraft:item_name\":'\"炙烤三文鱼排\"'}",
+      "recipe": "nw:furniture_1087_cut"
+    },
+    {
+      "stack": "item:minecraft:firework_star{\"minecraft:custom_data\":{nw_salvage:1b,nw_fur:1b,nw_fur_id_buildin:1088},\"minecraft:custom_model_data\":31008,\"minecraft:firework_explosion\":{colors:[I;16777215],shape:\"small_ball\"},\"minecraft:food\":{can_always_eat:1b,eat_seconds:1000000.0f,nutrition:0,saturation:0.0f},\"minecraft:hide_additional_tooltip\":{},\"minecraft:item_name\":'\"惠灵顿牛排\"'}",
+      "recipe": "nw:furniture_1088_cut"
+    },
+    {
+      "stack": "item:minecraft:firework_star{\"minecraft:custom_data\":{nw_salvage:1b,nw_fur:1b,nw_fur_id_buildin:1089},\"minecraft:custom_model_data\":31009,\"minecraft:firework_explosion\":{colors:[I;16777215],shape:\"small_ball\"},\"minecraft:food\":{can_always_eat:1b,eat_seconds:1000000.0f,nutrition:0,saturation:0.0f},\"minecraft:hide_additional_tooltip\":{},\"minecraft:item_name\":'\"烤鸡\"'}",
+      "recipe": "nw:furniture_1089_cut"
+    },
+    {
+      "stack": "item:minecraft:firework_star{\"minecraft:custom_data\":{nw_salvage:1b,nw_fur:1b,nw_fur_id_buildin:1090},\"minecraft:custom_model_data\":31010,\"minecraft:firework_explosion\":{colors:[I;16777215],shape:\"small_ball\"},\"minecraft:food\":{can_always_eat:1b,eat_seconds:1000000.0f,nutrition:0,saturation:0.0f},\"minecraft:hide_additional_tooltip\":{},\"minecraft:item_name\":'\"三色团子\"'}",
+      "recipe": "nw:furniture_1090_cut"
+    },
+    {
+      "stack": "item:minecraft:firework_star{\"minecraft:custom_data\":{nw_salvage:1b,nw_fur:1b,nw_fur_id_buildin:1091},\"minecraft:custom_model_data\":31011,\"minecraft:firework_explosion\":{colors:[I;16777215],shape:\"small_ball\"},\"minecraft:food\":{can_always_eat:1b,eat_seconds:1000000.0f,nutrition:0,saturation:0.0f},\"minecraft:hide_additional_tooltip\":{},\"minecraft:item_name\":'\"披萨\"'}",
+      "recipe": "nw:furniture_1091_cut"
+    },
+    {
+      "stack": "item:minecraft:firework_star{\"minecraft:custom_data\":{nw_salvage:1b,nw_fur:1b,nw_fur_id_buildin:1092},\"minecraft:custom_model_data\":31012,\"minecraft:firework_explosion\":{colors:[I;16777215],shape:\"small_ball\"},\"minecraft:food\":{can_always_eat:1b,eat_seconds:1000000.0f,nutrition:0,saturation:0.0f},\"minecraft:hide_additional_tooltip\":{},\"minecraft:item_name\":'\"毛玉食堂-料理台\"'}",
+      "recipe": "nw:furniture_1092_cut"
+    },
+    {
+      "stack": "item:minecraft:firework_star{\"minecraft:custom_data\":{nw_salvage:1b,nw_fur:1b,nw_fur_id_buildin:1093},\"minecraft:custom_model_data\":31013,\"minecraft:firework_explosion\":{colors:[I;16777215],shape:\"small_ball\"},\"minecraft:food\":{can_always_eat:1b,eat_seconds:1000000.0f,nutrition:0,saturation:0.0f},\"minecraft:hide_additional_tooltip\":{},\"minecraft:item_name\":'\"毛玉食堂-烧烤架\"'}",
+      "recipe": "nw:furniture_1093_cut"
+    },
+    {
+      "stack": "item:minecraft:firework_star{\"minecraft:custom_data\":{nw_salvage:1b,nw_fur:1b,nw_fur_id_buildin:1094},\"minecraft:custom_model_data\":31014,\"minecraft:firework_explosion\":{colors:[I;16777215],shape:\"small_ball\"},\"minecraft:food\":{can_always_eat:1b,eat_seconds:1000000.0f,nutrition:0,saturation:0.0f},\"minecraft:hide_additional_tooltip\":{},\"minecraft:item_name\":'\"毛玉食堂-平底锅灶台\"'}",
+      "recipe": "nw:furniture_1094_cut"
+    },
+    {
+      "stack": "item:minecraft:firework_star{\"minecraft:custom_data\":{nw_salvage:1b,nw_fur:1b,nw_fur_id_buildin:1095},\"minecraft:custom_model_data\":31015,\"minecraft:firework_explosion\":{colors:[I;16777215],shape:\"small_ball\"},\"minecraft:food\":{can_always_eat:1b,eat_seconds:1000000.0f,nutrition:0,saturation:0.0f},\"minecraft:hide_additional_tooltip\":{},\"minecraft:item_name\":'\"毛玉食堂-深口锅灶台\"'}",
+      "recipe": "nw:furniture_1095_cut"
+    },
+    {
+      "stack": "item:minecraft:firework_star{\"minecraft:custom_data\":{nw_salvage:1b,nw_fur:1b,nw_fur_id_buildin:1096},\"minecraft:custom_model_data\":31016,\"minecraft:firework_explosion\":{colors:[I;16777215],shape:\"small_ball\"},\"minecraft:food\":{can_always_eat:1b,eat_seconds:1000000.0f,nutrition:0,saturation:0.0f},\"minecraft:hide_additional_tooltip\":{},\"minecraft:item_name\":'\"毛玉食堂-熏肉架\"'}",
+      "recipe": "nw:furniture_1096_cut"
+    },
+    {
+      "stack": "item:minecraft:firework_star{\"minecraft:custom_data\":{nw_salvage:1b,nw_fur:1b,nw_fur_id_buildin:1097},\"minecraft:custom_model_data\":31017,\"minecraft:firework_explosion\":{colors:[I;16777215],shape:\"small_ball\"},\"minecraft:food\":{can_always_eat:1b,eat_seconds:1000000.0f,nutrition:0,saturation:0.0f},\"minecraft:hide_additional_tooltip\":{},\"minecraft:item_name\":'\"毛玉食堂-洗碗池\"'}",
+      "recipe": "nw:furniture_1097_cut"
+    },
+    {
+      "stack": "item:minecraft:firework_star{\"minecraft:custom_data\":{nw_salvage:1b,nw_fur:1b,nw_fur_id_buildin:1098},\"minecraft:custom_model_data\":31018,\"minecraft:firework_explosion\":{colors:[I;16777215],shape:\"small_ball\"},\"minecraft:food\":{can_always_eat:1b,eat_seconds:1000000.0f,nutrition:0,saturation:0.0f},\"minecraft:hide_additional_tooltip\":{},\"minecraft:item_name\":'\"毛玉食堂-烘干机\"'}",
+      "recipe": "nw:furniture_1098_cut"
+    },
+    {
+      "stack": "item:minecraft:firework_star{\"minecraft:custom_data\":{nw_salvage:1b,nw_fur:1b,nw_fur_id_buildin:1099},\"minecraft:custom_model_data\":31019,\"minecraft:firework_explosion\":{colors:[I;16777215],shape:\"small_ball\"},\"minecraft:food\":{can_always_eat:1b,eat_seconds:1000000.0f,nutrition:0,saturation:0.0f},\"minecraft:hide_additional_tooltip\":{},\"minecraft:item_name\":'\"毛玉食堂-上菜铃\"'}",
+      "recipe": "nw:furniture_1099_cut"
+    },
+    {
+      "stack": "item:minecraft:firework_star{\"minecraft:custom_data\":{nw_salvage:1b,nw_fur:1b,nw_fur_id_buildin:1100},\"minecraft:custom_model_data\":31020,\"minecraft:firework_explosion\":{colors:[I;16777215],shape:\"small_ball\"},\"minecraft:food\":{can_always_eat:1b,eat_seconds:1000000.0f,nutrition:0,saturation:0.0f},\"minecraft:hide_additional_tooltip\":{},\"minecraft:item_name\":'\"毛玉食堂-物品架\"'}",
+      "recipe": "nw:furniture_1100_cut"
+    },
+    {
+      "stack": "item:minecraft:firework_star{\"minecraft:custom_data\":{nw_fur:1b,nw_fur_id_buildin:1101},\"minecraft:custom_model_data\":32001,\"minecraft:firework_explosion\":{colors:[I;16777215],shape:\"small_ball\"},\"minecraft:food\":{can_always_eat:1b,eat_seconds:1000000.0f,nutrition:0,saturation:0.0f},\"minecraft:hide_additional_tooltip\":{},\"minecraft:item_name\":'\"垃圾堆\"'}",
+      "recipe": "nw:furniture_1101"
+    },
+    {
+      "stack": "item:minecraft:firework_star{\"minecraft:custom_data\":{nw_salvage:1b,nw_fur:1b,nw_fur_id_buildin:1102},\"minecraft:custom_model_data\":32002,\"minecraft:firework_explosion\":{colors:[I;16777215],shape:\"small_ball\"},\"minecraft:food\":{can_always_eat:1b,eat_seconds:1000000.0f,nutrition:0,saturation:0.0f},\"minecraft:hide_additional_tooltip\":{},\"minecraft:item_name\":'\"扫地机器人\"'}",
+      "recipe": "nw:furniture_1102_cut"
     }
   ],
   "recipe_defaults": {
