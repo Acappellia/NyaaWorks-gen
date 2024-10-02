@@ -744,3 +744,4 @@
 "nwr:furniture_1100_cut",
 "nw:furniture_1101",
 "nwr:furniture_1102_cut",
+"nwr:furniture_1103_cut",
