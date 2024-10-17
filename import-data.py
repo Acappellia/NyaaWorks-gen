@@ -463,7 +463,7 @@ recipe_list.close()
 rei_file.write(json.dumps(rei_json, indent=4, ensure_ascii=False))
 rei_file.close()
 
-emi_file.write(json.dumps(emi_json, indent=2, ensure_ascii=False))
+emi_file.write(json.dumps(emi_json, indent=2))
 emi_file.close()
 
 print(len(rows), 'files generated at', o_path)
