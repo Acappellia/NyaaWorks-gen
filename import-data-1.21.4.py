@@ -199,8 +199,9 @@ for row in rows:
     if row[24] != '':
         writeline += ', nw_fur_transfer_target_buildin: '
         writeline += row[24]
-    writeline += ', state_a: {item_id: "minecraft:firework_star", auto_cd: 1, model: '
+    writeline += ', state_a: {item_id: "minecraft:firework_star", auto_cd: 1, model: {floats: ['
     writeline += row[2]
+    writeline += '.0f]}'
     if row[4] == '1':
 #        if row[5] == '1':
 #            writeline += ', istable: 1'
