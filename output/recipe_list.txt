@@ -1549,7 +1549,6 @@
 "nwr:furniture_2033_cut",
 "nwr:furniture_2034_cut",
 "nwr:furniture_2035_cut",
-"nwr:furniture_2036_cut",
 "nwr:furniture_2037_cut",
 "nwr:furniture_2039_cut",
 "nwr:furniture_2041_cut",
@@ -1591,3 +1590,4 @@
 "nwr:furniture_2114_cut",
 "nwr:furniture_2116_cut",
 "nwr:furniture_2117_cut",
+"nwr:furniture_2119_cut",

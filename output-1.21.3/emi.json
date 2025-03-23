@@ -7716,7 +7716,7 @@
       "recipe": "nw:furniture_2033_cut"
     },
     {
-      "stack": "item:minecraft:firework_star{\"minecraft:custom_data\":{nw_salvage:1b,nw_fur:1b,nw_fur_id_buildin:2034},\"minecraft:custom_model_data\":152013,\"minecraft:firework_explosion\":{colors:[I;16777215],shape:\"small_ball\"},\"minecraft:consumable\":{consume_seconds:100000.0f,animation:\"none\",sound:{sound_id:\"\"},has_consume_particles:false},\"minecraft:hide_additional_tooltip\":{},\"minecraft:item_name\":'\"\u4e30\u5ddd\u7965\u5b50\"'}",
+      "stack": "item:minecraft:firework_star{\"minecraft:custom_data\":{nw_salvage:1b,nw_fur:1b,nw_fur_id_buildin:2034},\"minecraft:custom_model_data\":152013,\"minecraft:firework_explosion\":{colors:[I;16777215],shape:\"small_ball\"},\"minecraft:consumable\":{consume_seconds:100000.0f,animation:\"none\",sound:{sound_id:\"\"},has_consume_particles:false},\"minecraft:hide_additional_tooltip\":{},\"minecraft:item_name\":'\"\ud83d\udee0 \u4e30\u5ddd\u7965\u5b50\"'}",
       "recipe": "nw:furniture_2034_cut"
     },
     {
@@ -7724,8 +7724,7 @@
       "recipe": "nw:furniture_2035_cut"
     },
     {
-      "stack": "item:minecraft:firework_star{\"minecraft:custom_data\":{nw_salvage:1b,nw_fur:1b,nw_fur_id_buildin:2036},\"minecraft:custom_model_data\":152015,\"minecraft:firework_explosion\":{colors:[I;16777215],shape:\"small_ball\"},\"minecraft:consumable\":{consume_seconds:100000.0f,animation:\"none\",sound:{sound_id:\"\"},has_consume_particles:false},\"minecraft:hide_additional_tooltip\":{},\"minecraft:item_name\":'\"\u8f6f\u7cef\u5c0f\u7965\"'}",
-      "recipe": "nw:furniture_2036_cut"
+      "stack": "item:minecraft:firework_star{\"minecraft:custom_data\":{nw_salvage:1b,nw_fur:1b,nw_fur_id_buildin:2036},\"minecraft:custom_model_data\":152015,\"minecraft:firework_explosion\":{colors:[I;16777215],shape:\"small_ball\"},\"minecraft:consumable\":{consume_seconds:100000.0f,animation:\"none\",sound:{sound_id:\"\"},has_consume_particles:false},\"minecraft:hide_additional_tooltip\":{},\"minecraft:item_name\":'\"\ud83d\udee0 \u8f6f\u7cef\u5c0f\u7965\"'}"
     },
     {
       "stack": "item:minecraft:firework_star{\"minecraft:custom_data\":{nw_salvage:1b,nw_fur:1b,nw_fur_id_buildin:2037},\"minecraft:custom_model_data\":152016,\"minecraft:firework_explosion\":{colors:[I;16777215],shape:\"small_ball\"},\"minecraft:consumable\":{consume_seconds:100000.0f,animation:\"none\",sound:{sound_id:\"\"},has_consume_particles:false},\"minecraft:hide_additional_tooltip\":{},\"minecraft:item_name\":'\"\ud83d\udee0 \u91cc\u89c1\u5149\u94bb\"'}",
@@ -8013,6 +8012,16 @@
     },
     {
       "stack": "item:minecraft:firework_star{\"minecraft:custom_data\":{nw_salvage:1b,nw_fur:1b,nw_fur_id_buildin:2118},\"minecraft:custom_model_data\":153071,\"minecraft:firework_explosion\":{colors:[I;16777215],shape:\"small_ball\"},\"minecraft:consumable\":{consume_seconds:100000.0f,animation:\"none\",sound:{sound_id:\"\"},has_consume_particles:false},\"minecraft:hide_additional_tooltip\":{},\"minecraft:item_name\":'\"\ud83d\udee0 \u552f\u7684\u5409\u4ed6\uff08\u7acb\u67b6\uff09\"'}"
+    },
+    {
+      "stack": "item:minecraft:firework_star{\"minecraft:custom_data\":{nw_salvage:1b,nw_fur:1b,nw_fur_id_buildin:2119},\"minecraft:custom_model_data\":154000,\"minecraft:firework_explosion\":{colors:[I;16777215],shape:\"small_ball\"},\"minecraft:consumable\":{consume_seconds:100000.0f,animation:\"none\",sound:{sound_id:\"\"},has_consume_particles:false},\"minecraft:hide_additional_tooltip\":{},\"minecraft:item_name\":'\"\ud83d\udee0 \u516c\u56ed\u957f\u6905\"'}",
+      "recipe": "nw:furniture_2119_cut"
+    },
+    {
+      "stack": "item:minecraft:firework_star{\"minecraft:custom_data\":{nw_salvage:1b,nw_fur:1b,nw_fur_id_buildin:2120},\"minecraft:custom_model_data\":154001,\"minecraft:firework_explosion\":{colors:[I;16777215],shape:\"small_ball\"},\"minecraft:consumable\":{consume_seconds:100000.0f,animation:\"none\",sound:{sound_id:\"\"},has_consume_particles:false},\"minecraft:hide_additional_tooltip\":{},\"minecraft:item_name\":'\"\ud83d\udee0 \u516c\u56ed\u957f\u6905\"'}"
+    },
+    {
+      "stack": "item:minecraft:firework_star{\"minecraft:custom_data\":{nw_salvage:1b,nw_fur:1b,nw_fur_id_buildin:2121},\"minecraft:custom_model_data\":154002,\"minecraft:firework_explosion\":{colors:[I;16777215],shape:\"small_ball\"},\"minecraft:consumable\":{consume_seconds:100000.0f,animation:\"none\",sound:{sound_id:\"\"},has_consume_particles:false},\"minecraft:hide_additional_tooltip\":{},\"minecraft:item_name\":'\"\ud83d\udee0 \u516c\u56ed\u957f\u6905\"'}"
     }
   ],
   "recipe_defaults": {
